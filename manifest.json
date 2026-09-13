@@ -1,0 +1,9 @@
+{
+  "name":"K.A.W.I.L. Game-Based Modules",
+  "short_name":"K.A.W.I.L.",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#f7f3e9",
+  "theme_color":"#2f6f5e",
+  "description":"Game-based Filipino reading intervention for Grade 7 learners."
+}

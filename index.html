@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2f6f5e">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>K.A.W.I.L. Game-Based Modules</title>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <button class="brand brand-button" onclick="showScreen('aboutKawilScreen')" title="Tungkol sa K.A.W.I.L.">
+        <div class="brand-icon">🌿</div>
+        <div><h1>K.A.W.I.L.</h1><p>Game-Based Modules</p></div>
+      </button>
+      <button class="top-chip top-chip-button" onclick="showScreen('processScreen')">📚 Magbasa • Mag-isip • Magtagumpay</button>
+    </header>
+
+    <section id="homeScreen" class="screen active">
+      <div class="hero-card adventure-bg">
+        <div class="hero-text">
+          <span class="eyebrow">READ • THINK • DISCOVER</span>
+          <h2>Ang iyong reading adventure ay magsisimula na!</h2>
+          <p>Magbasa, mag-isip, at tuklasin ang bawat hamon kasama ang K.A.W.I.L.</p>
+          <div class="learner-entry">
+            <h3>🪪 Kilalanin ang Mambabasa</h3>
+            <p>Ilagay ang impormasyong ibinigay ng guro upang maitugma ang iyong mga resulta sa tamang record.</p>
+            <div class="entry-grid">
+              <label>Pangalan (Buong Pangalan)<input id="learnerName" type="text" autocomplete="name" placeholder="Hal. Juan Miguel Dela Cruz"></label>
+              <label>Baitang at Seksyon<input id="learnerSection" type="text" autocomplete="off" placeholder="Hal. 7-BLUEBELL"></label>
+              <label>ARAL Tutee No.<input id="learnerNumber" type="text" readonly placeholder="Awtomatikong ibibigay"></label>
+            </div>
+            <p id="registrationStatus" class="registration-status">Ang ARAL Tutee No. ay awtomatikong ibibigay kapag pinindot ang <strong>MAGLAKBAY NA!</strong>. Kapag pareho ang buong pangalan at baitang/seksyon sa naunang record, parehong numero ang gagamitin.</p>
+            <p class="privacy-note">Ang pangalan, baitang/seksyon, ARAL Tutee No., marka, trials, at active time ay maaaring maitala bilang progress record kapag nakakonekta ang website sa opisyal na record sheet.</p>
+          </div>
+          <button class="primary-btn" onclick="enterJourney()">MAGLAKBAY NA! →</button>
+        </div>
+        <div class="guide-area">
+          <div class="speech-bubble">Kumusta, Mambabasa! Handa ka na bang maglakbay sa mundo ng pagbasa?</div>
+          <button class="guide-profile-button" onclick="showScreen('authorScreen')" title="Kilalanin ang gumawa"><img src="images/kawil-guide-home-left.png" class="guide-img floating" alt="K.A.W.I.L. Reading Guide"></button>
+          <strong>K.A.W.I.L. Reading Guide</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutKawilScreen" class="screen info-screen">
+      <button class="back-btn" onclick="showScreen('homeScreen')">← Balik sa Unang Pahina</button>
+      <div class="info-hero"><span class="eyebrow">TUNGKOL SA K.A.W.I.L.</span><h2>Koneksyon ng Aklat sa Wastong Pagbasa, Intindí, at Linang ng Karunungan</h2><p>Ang K.A.W.I.L. ay may dalawang magkaugnay ngunit magkaibang bahagi: ang <strong>K.A.W.I.L. Reading Intervention Program</strong>, na isang school-based reading intervention na aking binuo at pinangangasiwaan sa paaralan, at ang <strong>K.A.W.I.L. Game-Based Modules</strong>, na binuo ko bilang digital na kagamitang pang-interbensyon para sa aking pananaliksik. Pareho silang nakatuon sa pagpapaunlad ng pagbasa, ngunit magkaiba ang kanilang layunin, batayan ng pagbuo, at paraan ng implementasyon.</p></div>
+
+      <div class="info-grid">
+        <article class="info-card"><h3>📚 K.A.W.I.L. Reading Intervention Program</h3><p>Isang programang pangpaaralan na aking binuo upang magkaroon ng tuloy-tuloy at organisadong suporta ang mga mag-aaral na nangangailangan pa ng pagpapaunlad sa pagbasa. Ako rin ang nangangasiwa sa pagpaplano, pagsasagawa, at pagsubaybay sa mga gawaing nakapaloob sa programa.</p></article>
+        <article class="info-card"><h3>🌱 Rasyonal ng Reading Intervention</h3><p>Nabuo ang programa mula sa pangangailangang matugunan ang mga suliranin sa pagbasa na nakikita sa mga resulta ng <strong>Philippine Informal Reading Inventory (Phil-IRI)</strong> at sa aktuwal na karanasan sa klase. Layunin nitong magbigay ng mas sistematiko, tuloy-tuloy, at angkop na interbensyon sa mga mag-aaral na nangangailangan ng karagdagang gabay sa pagbasa.</p></article>
+        <article class="info-card"><h3>🎯 Layunin ng Reading Intervention</h3><p>Layunin ng programa na mapalakas ang kakayahan at tiwala ng mga mag-aaral sa pagbasa sa pamamagitan ng mga gawaing nakabatay sa kanilang pangangailangan, regular na pagsasanay, paggabay, at pagsubaybay sa kanilang pag-unlad.</p></article>
+        <article class="info-card"><h3>🛠️ Pagbuo ng Reading Intervention</h3><p>Ang mga gawain at estratehiya ng programa ay inihahanda batay sa mga pangangailangang natutukoy sa Phil-IRI at sa obserbasyon sa pagkatuto ng mga mag-aaral. Dinisenyo ang programa upang magkaroon ng malinaw na direksiyon mula sa pagtukoy ng pangangailangan hanggang sa pagbibigay ng angkop na reading activities at progress monitoring.</p></article>
+        <article class="info-card"><h3>🏫 Implementasyon ng Reading Intervention</h3><p>Isinasagawa ang K.A.W.I.L. Reading Intervention Program sa paaralan bilang bahagi ng suportang pang-akademiko para sa mga mag-aaral. Ako ang nangangasiwa sa programa, katuwang ang mga gawaing nakatuon sa aktuwal na pangangailangan ng mga batang kalahok at sa patuloy na pagsubaybay sa kanilang reading progress.</p></article>
+
+        <article class="info-card"><h3>🎮 K.A.W.I.L. Game-Based Modules</h3><p>Ang K.A.W.I.L. Game-Based Modules naman ay isang <strong>digital na kagamitang pang-interbensyon na binuo ko para sa pananaliksik</strong>. Hindi ito kapalit ng buong Reading Intervention Program; isa itong hiwalay na research-based material na nakatuon sa limang kasanayan sa pagbasa na sinusukat at pinauunlad sa pag-aaral.</p></article>
+        <article class="info-card"><h3>🌱 Rasyonal ng Game-Based Modules</h3><p>Binuo ang Game-Based Modules upang matugunan ang mga reading gap na natutukoy sa Phil-IRI at upang gawing mas aktibo at makabuluhan ang pagsasanay sa pagbasa. Sa halip na umasa lamang sa papel at panulat, binibigyan ang mag-aaral ng pagkakataong matuto sa iba’t ibang paraan—sa pamamagitan ng pagbabasa, pakikinig, panonood, interactive na hamon, agarang feedback, at muling pagsubok.</p></article>
+        <article class="info-card"><h3>🎯 Layunin ng Game-Based Modules</h3><p>Layunin ng pag-aaral na matukoy ang epekto ng <strong>Game-Based Module bilang kagamitang pang-interbensyon sa pagbasa ng mga mag-aaral sa Baitang 7</strong>. Partikular itong nakatuon sa Pagkilala sa Salita, Bilis at Kasanayan sa Pagbasa, Literal na Pag-unawa, Mapagpahiwatig na Pag-unawa, at Kritikal na Pag-unawa.</p></article>
+        <article class="info-card"><h3>🧩 Pagbuo ng Game-Based Modules</h3><p>Ang limang modyul ay binuo ayon sa limang kasanayan sa pagbasa. Bawat modyul ay may sariling teksto o kuwento at game-based activity na sinusundan ng <strong>12 competency-aligned items</strong>. Iisang impormasyon ang pinagbabatayan kahit piliin ng mag-aaral na basahin, pakinggan, o panoorin ang kuwento upang manatiling pareho ang nilalaman ng pagtataya.</p></article>
+        <article class="info-card"><h3>🚀 Implementasyon ng Game-Based Modules</h3><p>Sa pananaliksik, ginagamit ng mga mag-aaral ang mga modyul nang sunod-sunod: <strong>Teksto/Kuwento → Game Activity → Competency-Aligned Items → Agarang Feedback → Mastery Check</strong>. Kailangang makakuha ng <strong>80% pataas</strong> upang mabuksan ang susunod na modyul. Ang mga pagtatangka, marka, at active time ay nagsisilbing progress records habang ginagamit ang digital intervention.</p></article>
+      </div>
+    </section>
+
+    <section id="processScreen" class="screen info-screen">
+      <button class="back-btn" onclick="showScreen('homeScreen')">← Balik sa Unang Pahina</button>
+      <div class="info-hero"><span class="eyebrow">📚 MAGBASA • MAG-ISIP • MAGTAGUMPAY</span><h2>Proseso ng K.A.W.I.L. Assessment</h2></div>
+      <div class="process-steps">
+        <article><span>1</span><div><h3>Magbasa</h3><p>Basahin, pakinggan, o panoorin ang tekstong nakalaan sa bawat modyul. Dito nagmumula ang konteksto at ebidensiyang gagamitin sa mga hamon.</p></div></article>
+        <article><span>2</span><div><h3>Mag-isip</h3><p>Sagutan ang 12 competency-aligned items. Nagra-randomize ang ayos ng mga pagpipilian, at itinatala ang active time sa teksto at bawat tanong nang hindi ipinapakita ang timer.</p></div></article>
+        <article><span>3</span><div><h3>Magtagumpay</h3><p>Ang <strong>10/12 o 83%</strong> pataas ay lampas sa 80% mastery criterion at magbubukas sa susunod na modyul. Kapag hindi pa naabot, maaaring bumalik sa teksto at muling sumubok; lahat ng trials ay naitatala.</p></div></article>
+      </div>
+    </section>
+
+    <section id="authorScreen" class="screen info-screen">
+      <button class="back-btn" onclick="showScreen('homeScreen')">← Balik sa Unang Pahina</button>
+      <div class="author-profile">
+        <img src="images/kawil-guide-home-left.png" alt="K.A.W.I.L. Reading Guide">
+        <div><span class="eyebrow">ANG GUMAWA</span><h2>Camille Joyce E. Joves</h2><p class="author-sub">Guro sa Filipino • Mananaliksik • K.A.W.I.L. Developer</p></div>
+      </div>
+      <article class="bio-card"><h3>Maikling Talambuhay</h3><p>Noong bata pa ako, pangarap ko nang maging guro dahil sa inspirasyong natanggap ko mula sa aking mga guro. Isa sa mga paborito naming laro ng aking mga kaibigan ang “teacher-teacheran.” Habang ako ay nagdadalaga hanggang high school at kolehiyo, lalo kong napagtanto na ang pagtuturo ang propesyong nais kong tahakin. Sa suporta ng aking mga mahal sa buhay, ipinagpatuloy ko ang pag-aaral at patuloy kong hinuhubog ang aking sarili bilang guro.</p><p>Nagtapos ako ng <strong>Bachelor of Secondary Education, Major in Filipino</strong> sa Bestlink College of the Philippines at kumuha ng <strong>Master of Arts in Teaching, Major in Filipino</strong> sa University of Rizal System–Morong Campus. Naging guro ako sa The Immaculate Mother Academy Inc. noong 2019–2020 at sa Kings’ Montessori School noong 2020–2022. Mula Enero 2023, nagtuturo ako sa <strong>Talipapa High School</strong> bilang Junior High School Teacher.</p><p>Patuloy akong dumadalo sa mga pagsasanay na may kaugnayan sa pagbasa at akademikong interbensyon, kabilang ang mga pagsasanay tungkol sa Phil-IRI at ARAL. Mula sa aking karanasan bilang guro at mananaliksik, binuo ko ang K.A.W.I.L. Reading Intervention Program para sa mga mag-aaral na nangangailangan ng suporta sa pagbasa, at kalaunan ay binuo ko ang K.A.W.I.L. Game-Based Modules bilang digital na kagamitang pang-interbensyon para sa aking pananaliksik.</p></article>
+      <article class="dedication-card"><h3>💛 Paghahandog</h3><p>Iniaalay ko ang gawaing ito sa Diyos na patuloy na nagbibigay sa akin ng lakas, karunungan, at biyaya sa bawat hakbang ng aking paglalakbay. Iniaalay ko rin ito sa aking mga magulang na sina <strong>Carmelita</strong> at <strong>Dominador</strong>, sa aking mga kapatid at buong pamilya, na patuloy na nagbibigay ng suporta, panalangin, at pagmamahal. Iniaalay ko rin ito kay <strong>Neil</strong>, na naging kasama at sandigan ko sa paglalakbay ng aking pananaliksik. Ang kanilang presensya at suporta ay naging mahalagang bahagi ng aking pagpupursigi upang mabuo at matapos ang gawaing ito.</p></article>
+    </section>
+
+    <section id="dashboardScreen" class="screen">
+      <div class="section-heading map-heading">
+        <span class="eyebrow">YOUR READING JOURNEY</span>
+        <h2>Mapa ng Paglalakbay</h2>
+        <p>Dumaan sa bawat reading mission. Kailangang makakuha ng <strong>80% pataas</strong> upang mabuksan ang susunod na himpilan.</p>
+        <p id="bestScore" class="best-score">Mastery target: 80% pataas</p>
+      </div>
+
+      <div class="journey-map">
+        <div class="trail"></div>
+        <button id="stop1" class="map-stop stop-1 available" onclick="showScreen('module1Screen')">
+          <span class="stop-number">1</span><span class="module-icon">🔎</span>
+          <div><h3>Word Detective</h3><p>Pagkilala sa Salita</p></div><span id="status1" class="status">SIMULAN</span>
+        </button>
+        <button id="stop2" class="map-stop stop-2 locked" disabled onclick="showScreen('module2Screen')">
+          <span class="stop-number">2</span><span class="module-icon">⏱️</span>
+          <div><h3>Time-Attack Reader</h3><p>Bilis at Kasanayan sa Pagbasa</p></div><span id="status2" class="status">🔒 80%</span>
+        </button>
+        <button id="stop3" class="map-stop stop-3 locked" disabled onclick="showScreen('module3Screen')">
+          <span class="stop-number">3</span><span class="module-icon">🕵️</span>
+          <div><h3>Fact Hunter</h3><p>Literal na Pag-unawa</p></div><span id="status3" class="status">🔒</span>
+        </button>
+        <button id="stop4" class="map-stop stop-4 locked" disabled onclick="showScreen('module4Screen')">
+          <span class="stop-number">4</span><span class="module-icon">🔐</span>
+          <div><h3>Mystery Case</h3><p>Mapagpahiwatig na Pag-unawa</p></div><span id="status4" class="status">🔒</span>
+        </button>
+        <button id="stop5" class="map-stop stop-5 locked" disabled onclick="showScreen('module5Screen')">
+          <span class="stop-number">5</span><span class="module-icon">⚖️</span>
+          <div><h3>Decision Choice</h3><p>Kritikal na Pag-unawa</p></div><span id="status5" class="status">🔒</span>
+        </button>
+      </div>
+      <div id="dashboardResultsCard" class="dashboard-results-card hidden">
+        <div><span class="eyebrow">KUMPLETONG PAGLALAKBAY</span><h3>📊 Ang Aking Resulta</h3><p>Makikita rito ang lahat ng naitalang trials, score, percentage, at active time sa Modyul 1–5.</p></div>
+        <button class="primary-btn" onclick="showScreen('journeyResultScreen')">TINGNAN ANG AKING RESULTA →</button>
+      </div>
+    </section>
+
+    <section id="module1Screen" class="screen">
+      <button class="back-btn" onclick="showScreen('dashboardScreen')">← Mapa ng Paglalakbay</button>
+      <div class="module-hero">
+        <div>
+          <span class="eyebrow">MODYUL 1 • UNANG HIMPILAN</span>
+          <h2>🔎 WORD DETECTIVE</h2>
+          <p class="competency">KOMPETENSI: <strong>PAGKILALA SA SALITA</strong></p>
+        </div>
+        <div class="mini-guide-wrap">
+          <div class="mini-bubble">Tandaan: unawain muna ang kuwento bago sagutan ang hamon.</div>
+          <img src="images/kawil-guide-tandaan-left.png" class="mini-guide floating" alt="K.A.W.I.L. Guide">
+        </div>
+      </div>
+
+      <div class="instruction-card">
+        <h3>📌 Panuto</h3>
+        <p>Basahin at unawain ang kuwento. Bigyang-pansin ang mga salitang ginamit sa teksto. Pagkatapos, isagawa ang mga hamon upang masukat ang iyong kakayahang kumilala, bumasa, at umunawa ng mga salita.</p>
+      </div>
+
+      <article class="story-card">
+        <div class="story-top">
+          <span>📖 BASAHIN ANG KUWENTO</span>
+          <div class="story-tools"><span class="word-count">171 salita</span><button class="audio-btn" onclick="playStoryAudio('storyAudio','m1')">▶ Pakinggan</button><button class="video-btn" onclick="openStoryVideo('m1')">🎬 Panoorin</button></div>
+        </div>
+        <h3>Ang Lihim sa Lumang Aklatan</h3>
+        <p class="author-line">May-akda: <strong>Camille Joyce E. Joves</strong></p>
+        <p>Isang hapon, napansin ni <strong>Mika</strong> ang isang lumang kahon sa sulok ng silid-aklatan. Hindi ito karaniwang kahon dahil may maliit itong kandado at tila matagal nang hindi nabubuksan. Dahil sa kaniyang <strong>pag-uusisa</strong>, agad niya itong ipinakita sa kaniyang guro.</p>
+        <p>“Ma'am, kanino po kaya ito?” tanong ni Mika.</p>
+        <p>Sinuri ng guro ang kahon at nakita ang isang maliit na papel na nakasingit sa ilalim nito. Nakasaad doon ang isang <strong>pahiwatig</strong> tungkol sa isang aklat na matagal nang nawawala sa silid-aklatan.</p>
+        <p>Naging <strong>masigasig</strong> si Mika sa paghahanap. Isa-isa niyang tiningnan ang mga istante at inayos ang mga aklat na nakakalat sa paligid. Maya-maya, napansin niya ang isang aklat na nakatago sa likod ng isang malaking diksyunaryo.</p>
+        <p>Dahan-dahan niya itong kinuha. Sa unang pahina, nakita niya ang pangalan ng dating tagapangasiwa ng silid-aklatan. Mayroon ding maikling mensahe na nagsasabing ang aklat ay dapat pangalagaan at ipasa sa mga susunod na mag-aaral.</p>
+        <p>Napangiti si Mika. Hindi man kayamanan ang kaniyang natagpuan, nakadama siya ng <strong>kagalakan</strong> dahil may natuklasan siyang bahagi ng kasaysayan ng kanilang paaralan.</p>
+        <audio id="storyAudio" preload="metadata"><source src="audio/modyul1-kuwento.mp3" type="audio/mpeg"></audio>
+      </article>
+
+      <div class="mission-card">
+        <div><span class="eyebrow">MISSION</span><h3>🕵️ Hanapin ang Tamang Salita!</h3><p>Sundin ang mga clue at piliin ang pinakamainam na sagot.</p></div>
+        <button class="primary-btn" onclick="startModule1()">SIMULAN ANG HAMON →</button>
+      </div>
+    </section>
+
+    <section id="quizScreen" class="screen">
+      <div class="quiz-top"><button class="back-btn" onclick="showScreen('module1Screen')">← Balik sa Teksto</button><span id="questionCounter">Tanong 1 / 12</span></div>
+      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+      <div class="quiz-layout">
+        <aside class="quiz-guide-panel">
+          <div class="guide-state-frame"><img id="quizGuideImage" src="images/kawil-guide-tandaan-clean.png" class="quiz-guide floating" alt="K.A.W.I.L. Guide"></div>
+          <div id="guideMessage" class="guide-message">Basahin nang mabuti ang tanong at balikan ang kuwento kung kinakailangan.</div>
+        </aside>
+        <div class="question-card">
+          <span class="eyebrow">WORD DETECTIVE</span>
+          <h2 id="questionText"></h2>
+          <div id="choices" class="choices"></div>
+          <div id="feedback" class="feedback hidden"></div>
+          <button id="nextBtn" class="primary-btn hidden" onclick="nextQuestion()">SUNOD NA HAMON →</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="result-card">
+        <img id="resultGuideImage" src="images/kawil-guide-neutral.png" class="result-guide floating" alt="K.A.W.I.L. Guide">
+        <div class="result-icon">🏆</div><span class="eyebrow">MODYUL 1 • RESULTA</span>
+        <h2>Word Detective Mastery Check</h2>
+        <div class="score" id="finalScore">0 / 12</div>
+        <div class="percent-score" id="finalPercent">0%</div>
+        <p id="moduleTime1" class="module-time-result"></p>
+        <p id="scoreMessage"></p>
+        <div id="masteryMessage" class="mastery-banner"></div>
+        <div id="resultActions" class="result-actions"></div>
+      </div>
+    </section>
+
+    <section id="module2Screen" class="screen">
+      <button class="back-btn" onclick="showScreen('dashboardScreen')">← Mapa ng Paglalakbay</button>
+      <div class="module-hero unlocked-next">
+        <div>
+          <span class="eyebrow">MODYUL 2 • IKALAWANG HIMPILAN</span>
+          <h2>⏱️ TIME-ATTACK READER</h2>
+          <p class="competency">KOMPETENSI: <strong>BILIS AT KASANAYAN SA PAGBASA</strong></p>
+        </div>
+        <div class="mini-guide-wrap">
+          <div class="mini-bubble">Basahin nang malinaw at tuloy-tuloy. Hindi kailangang magmadali—unahin ang wastong pagbasa.</div>
+          <img src="images/kawil-guide-tandaan-left.png" class="mini-guide floating" alt="K.A.W.I.L. Guide">
+        </div>
+      </div>
+
+      <div class="instruction-card">
+        <h3>📌 Panuto</h3>
+        <p>Basahin muna ang teksto nang tahimik. Pagkatapos, pindutin ang <strong>Simulan ang Oras</strong> at basahin ito nang malakas. Kapag natapos, pindutin ang <strong>Tapos na Akong Magbasa</strong>. Pagkatapos ng timed reading, sagutan ang 12 hamon tungkol sa wastong paghinto, pagpapangkat ng mga salita, pagbigkas, at pag-unawa sa binasa.</p>
+      </div>
+
+      <article class="story-card">
+        <div class="story-top"><span>📖 TEKSTO PARA SA TIMED READING</span><div class="story-tools"><span class="word-count">174 salita</span><button class="audio-btn" onclick="playStoryAudio('storyAudio2','m2')">▶ Pakinggan</button><button class="video-btn" onclick="openStoryVideo('m2')">🎬 Panoorin</button></div></div>
+        <h3>Ang Munting Aklatan sa Pasilyo</h3>
+        <p class="author-line">May-akda: <strong>Camille Joyce E. Joves</strong></p>
+        <div id="module2Passage">
+          <p>Maagang dumating si Lira sa paaralan dahil may gawain ang kanilang klase bago magsimula ang unang asignatura. Sa tabi ng pasilyo, napansin niya ang tatlong kahong puno ng mga aklat. May nakasulat na karatulang, “Kumuha, Magbasa, Magbalik.”</p>
+          <p>“Para saan po ang mga aklat na ito?” tanong ni Lira sa kanilang guro.</p>
+          <p>Ipinaliwanag ng guro na bubuo sila ng isang munting aklatan na maaaring gamitin ng sinumang mag-aaral habang naghihintay ng klase. Kailangang ayusin ang mga aklat ayon sa paksa at lagyan ng simpleng talaan upang madaling malaman kung alin ang nahiram.</p>
+          <p>Agad na tumulong si Lira. Maingat niyang pinaghiwalay ang mga kuwentong pambata, sangguniang aklat, at maiikling babasahin. Nang dumating ang kaniyang mga kaklase, hinati-hati nila ang gawain. May naglinis ng estante, may gumawa ng mga palatandaan, at may naghanda ng talaan.</p>
+          <p>Bago tumunog ang kampana, maayos na ang munting aklatan. Napansin ni Lira na mas mabilis natapos ang gawain dahil nagtulungan sila. Naisip niyang kahit maliit ang kanilang proyekto, maaari itong makatulong upang mas maraming mag-aaral ang magkaroon ng oras at pagkakataong magbasa.</p>
+        </div>
+        <audio id="storyAudio2" preload="metadata"><source src="audio/modyul2-kuwento.mp3" type="audio/mpeg"></audio>
+      </article>
+
+      <div class="timer-card">
+        <div>
+          <span class="eyebrow">FLUENCY PRACTICE</span>
+          <h3>⏱️ Basahin nang Malakas</h3>
+          <p>Ang oras ay para sa pagsasanay lamang. Hindi nito awtomatikong sinusukat ang wastong bigkas o pagkakamali.</p>
+        </div>
+        <div class="timer-display" id="timerDisplay">00:00</div>
+        <div class="timer-actions">
+          <button id="startTimerBtn" class="primary-btn" onclick="startReadingTimer()">SIMULAN ANG ORAS</button>
+          <button id="stopTimerBtn" class="secondary-btn" onclick="stopReadingTimer()" disabled>TAPOS NA AKONG MAGBASA</button>
+        </div>
+        <p id="timerNote" class="timer-note">Tapusin muna ang timed reading bago mabuksan ang hamon.</p>
+      </div>
+
+      <div class="mission-card">
+        <div><span class="eyebrow">MISSION</span><h3>⚡ Smooth Reading Challenge</h3><p>Makakuha ng 80% pataas upang mabuksan ang Modyul 3.</p></div>
+        <button id="startModule2Btn" class="primary-btn" onclick="startModule2()" disabled>SIMULAN ANG HAMON →</button>
+      </div>
+    </section>
+
+    <section id="quiz2Screen" class="screen">
+      <div class="quiz-top"><button class="back-btn" onclick="showScreen('module2Screen')">← Balik sa Teksto</button><span id="questionCounter2">Tanong 1 / 12</span></div>
+      <div class="progress-track"><div id="progressBar2" class="progress-bar"></div></div>
+      <div class="quiz-layout">
+        <aside class="quiz-guide-panel">
+          <div class="guide-state-frame"><img id="quizGuideImage2" src="images/kawil-guide-tandaan-clean.png" class="quiz-guide floating" alt="K.A.W.I.L. Guide"></div>
+          <div id="guideMessage2" class="guide-message">Pansinin ang bantas, paghinto, at pagpapangkat ng mga salita.</div>
+        </aside>
+        <div class="question-card">
+          <span class="eyebrow">TIME-ATTACK READER</span>
+          <h2 id="questionText2"></h2>
+          <div id="choices2" class="choices"></div>
+          <div id="feedback2" class="feedback hidden"></div>
+          <button id="nextBtn2" class="primary-btn hidden" onclick="nextQuestion2()">SUNOD NA HAMON →</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="result2Screen" class="screen">
+      <div class="result-card">
+        <img id="resultGuideImage2" src="images/kawil-guide-neutral.png" class="result-guide floating" alt="K.A.W.I.L. Guide">
+        <div class="result-icon">⏱️</div><span class="eyebrow">MODYUL 2 • RESULTA</span>
+        <h2>Time-Attack Reader Mastery Check</h2>
+        <div class="score" id="finalScore2">0 / 12</div>
+        <div class="percent-score" id="finalPercent2">0%</div>
+        <p id="readingTimeResult" class="reading-time-result"></p>
+        <p id="moduleTime2" class="module-time-result"></p>
+        <p id="scoreMessage2"></p>
+        <div id="masteryMessage2" class="mastery-banner"></div>
+        <div id="resultActions2" class="result-actions"></div>
+      </div>
+    </section>
+
+    <section id="module3Screen" class="screen">
+      <button class="back-btn" onclick="showScreen('dashboardScreen')">← Mapa ng Paglalakbay</button>
+      <div class="module-hero unlocked-next">
+        <div>
+          <span class="eyebrow">MODYUL 3 • IKATLONG HIMPILAN</span>
+          <h2>🕵️ FACT HUNTER</h2>
+          <p class="competency">KOMPETENSI: <strong>LITERAL NA PAG-UNAWA</strong></p>
+        </div>
+        <div class="mini-guide-wrap">
+          <div class="mini-bubble">Hanapin ang sagot na tuwirang nakasaad sa teksto. Maging mapanuri sa bawat detalye.</div>
+          <img src="images/kawil-guide-tandaan-left.png" class="mini-guide floating" alt="K.A.W.I.L. Guide">
+        </div>
+      </div>
+
+      <div class="instruction-card">
+        <h3>📌 Panuto</h3>
+        <p>Basahin at unawain ang teksto. Pagkatapos, sagutin ang 12 hamon batay lamang sa mga impormasyong malinaw at tuwirang nakasaad sa binasa. Bigyang-pansin ang tauhan, lugar, oras, pagkakasunod-sunod ng pangyayari, at mahahalagang detalye.</p>
+      </div>
+
+      <article class="story-card">
+        <div class="story-top"><span>📖 BASAHIN ANG TEKSTO</span><div class="story-tools"><span class="word-count">187 salita</span><button class="audio-btn" onclick="playStoryAudio('storyAudio3','m3')">▶ Pakinggan</button><button class="video-btn" onclick="openStoryVideo('m3')">🎬 Panoorin</button></div></div>
+        <h3>Ang Proyektong Gulayan ng Baitang Pito</h3>
+        <p class="author-line">May-akda: <strong>Camille Joyce E. Joves</strong></p>
+        <div id="module3Passage">
+          <p>Noong Martes ng umaga, nagtipon ang mga mag-aaral ng Baitang 7-Mabini sa likod ng kanilang silid-aralan. Inatasan silang ayusin ang maliit na gulayan ng klase bilang bahagi ng kanilang proyekto sa paaralan. Dala ng pangkat ang mga punla ng pechay, kamatis, at talong, pati mga pandilig at maliit na pala.</p>
+          <p>Bago magsimula, hinati ni Gng. Ramos ang klase sa apat na pangkat. Ang unang pangkat ang naglinis ng lupa at nag-alis ng tuyong dahon. Ang ikalawang pangkat ang gumawa ng mga tudling. Ang ikatlong pangkat ang nagtanim ng mga punla, samantalang ang ikaapat na pangkat ang naghanda ng mga karatulang may pangalan ng bawat halaman.</p>
+          <p>Bandang alas-diyes, natapos nila ang pagtatanim. Pinadiligan ni Gng. Ramos ang bawat hanay upang hindi matuyo ang lupa. Pagkatapos, naglagay sila ng iskedyul ng pagdidilig sa tabi ng pinto ng silid-aralan. Dalawang mag-aaral ang nakatalaga bawat araw mula Lunes hanggang Biyernes.</p>
+          <p>Bago sila bumalik sa klase, pinaalalahanan sila ng guro na huwag apakan ang mga tudling at huwag pumitas ng dahon nang walang pahintulot. Napagkasunduan din nilang susukatin ang paglaki ng mga halaman tuwing Biyernes at itatala ang resulta sa kanilang talaang-pangklase.</p>
+        </div>
+        <audio id="storyAudio3" preload="metadata"><source src="audio/modyul3-kuwento.mp3" type="audio/mpeg"></audio>
+      </article>
+
+      <div class="mission-card">
+        <div><span class="eyebrow">MISSION</span><h3>🔎 Hanapin ang Eksaktong Detalye!</h3><p>Piliin ang sagot na malinaw na sinusuportahan ng teksto. Makakuha ng 80% pataas upang mabuksan ang Modyul 4.</p></div>
+        <button class="primary-btn" onclick="startModule3()">SIMULAN ANG HAMON →</button>
+      </div>
+    </section>
+
+    <section id="quiz3Screen" class="screen">
+      <div class="quiz-top"><button class="back-btn" onclick="showScreen('module3Screen')">← Balik sa Teksto</button><span id="questionCounter3">Tanong 1 / 12</span></div>
+      <div class="progress-track"><div id="progressBar3" class="progress-bar"></div></div>
+      <div class="quiz-layout">
+        <aside class="quiz-guide-panel">
+          <div class="guide-state-frame"><img id="quizGuideImage3" src="images/kawil-guide-tandaan-clean.png" class="quiz-guide floating" alt="K.A.W.I.L. Guide"></div>
+          <div id="guideMessage3" class="guide-message">Hanapin ang detalyeng tuwirang nakasaad sa teksto bago pumili ng sagot.</div>
+        </aside>
+        <div class="question-card">
+          <span class="eyebrow">FACT HUNTER</span>
+          <h2 id="questionText3"></h2>
+          <div id="choices3" class="choices"></div>
+          <div id="feedback3" class="feedback hidden"></div>
+          <button id="nextBtn3" class="primary-btn hidden" onclick="nextQuestion3()">SUNOD NA HAMON →</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="result3Screen" class="screen">
+      <div class="result-card">
+        <img id="resultGuideImage3" src="images/kawil-guide-neutral.png" class="result-guide floating" alt="K.A.W.I.L. Guide">
+        <div class="result-icon">🕵️</div><span class="eyebrow">MODYUL 3 • RESULTA</span>
+        <h2>Fact Hunter Mastery Check</h2>
+        <div class="score" id="finalScore3">0 / 12</div>
+        <div class="percent-score" id="finalPercent3">0%</div>
+        <p id="moduleTime3" class="module-time-result"></p>
+        <p id="scoreMessage3"></p>
+        <div id="masteryMessage3" class="mastery-banner"></div>
+        <div id="resultActions3" class="result-actions"></div>
+      </div>
+    </section>
+
+    <section id="module4Screen" class="screen">
+      <button class="back-btn" onclick="showScreen('dashboardScreen')">← Mapa ng Paglalakbay</button>
+      <div class="module-hero unlocked-next">
+        <div>
+          <span class="eyebrow">MODYUL 4 • IKAAPAT NA HIMPILAN</span>
+          <h2>🔐 MYSTERY CASE</h2>
+          <p class="competency">KOMPETENSI: <strong>MAPAGPAHIWATIG NA PAG-UNAWA</strong></p>
+        </div>
+        <div class="mini-guide-wrap">
+          <div class="mini-bubble">Hindi lahat ng sagot ay tuwirang nakasulat. Hanapin ang mga clue at bumuo ng lohikal na hinuha.</div>
+          <img src="images/kawil-guide-tandaan-left.png" class="mini-guide floating" alt="K.A.W.I.L. Guide">
+        </div>
+      </div>
+
+      <div class="instruction-card">
+        <h3>📌 Panuto</h3>
+        <p>Basahin at unawain ang kuwento. Pagkatapos, sagutin ang 12 hamon sa pamamagitan ng pagsasama-sama ng mga pahiwatig mula sa teksto at ng iyong sariling lohikal na pag-unawa. Piliin ang hinuha, sanhi, posibleng dahilan, damdamin, o konklusyong may pinakamalakas na batayan sa binasa.</p>
+      </div>
+
+      <article class="story-card">
+        <div class="story-top"><span>📖 BASAHIN ANG KUWENTO</span><div class="story-tools"><span class="word-count">203 salita</span><button class="audio-btn" onclick="playStoryAudio('storyAudio4','m4')">▶ Pakinggan</button><button class="video-btn" onclick="openStoryVideo('m4')">🎬 Panoorin</button></div></div>
+        <h3>Ang Basang Payong sa Silid-Aralan</h3>
+        <p class="author-line">May-akda: <strong>Camille Joyce E. Joves</strong></p>
+        <div id="module4Passage">
+          <p>Pagkatapos ng klase noong Huwebes, biglang bumuhos ang malakas na ulan. Nasa may gate na si Aya nang maalala niyang naiwan niya sa silid-aralan ang folder para sa kanilang pangkatang gawain. Bumalik siya sa gusali habang unti-unti nang kumakaunti ang mga tao sa paaralan.</p>
+          <p>Pagdating niya sa kanilang silid, napansin niyang nakabukas nang kaunti ang pinto. Patay ang ilaw, ngunit may basang asul na payong na nakasandal sa tabi ng kabinet. May ilang patak din ng tubig sa sahig mula sa pinto patungo sa reading corner sa may bintana.</p>
+          <p>Nang lapitan ni Aya ang reading corner, nakita niyang natatakpan ng malaking plastik ang mga aklat. Basa ang gilid ng kurtina at may kaunting tubig sa ilalim ng bintana, ngunit tuyo ang mga aklat. Sa pisara ay may nakasulat na, “Naabutan bago mabasa.” Walang pangalan sa ibaba nito.</p>
+          <p>Maya-maya, may narinig siyang mabilis na yabag sa pasilyo. Dumating si Noel na may dalang basahan. Napahinto siya nang makita si Aya at saka tumingin sa bintana.</p>
+          <p>“Buti na lang, hindi na lumakas ulit ang hangin,” sabi niya habang pinupunasan ang sahig. Hindi na nagtanong si Aya. Tinulungan na lamang niya si Noel na ayusin ang kurtina at iligpit ang plastik bago kunin ang kaniyang folder.</p>
+        </div>
+        <audio id="storyAudio4" preload="metadata"><source src="audio/modyul4-kuwento.mp3" type="audio/mpeg"></audio>
+      </article>
+
+      <div class="mission-card">
+        <div><span class="eyebrow">MISSION</span><h3>🧩 Buoin ang Hinuha!</h3><p>Pagsamahin ang mga clue upang piliin ang pinakamakatwirang sagot. Makakuha ng 80% pataas upang mabuksan ang Modyul 5.</p></div>
+        <button class="primary-btn" onclick="startModule4()">SIMULAN ANG HAMON →</button>
+      </div>
+    </section>
+
+    <section id="quiz4Screen" class="screen">
+      <div class="quiz-top"><button class="back-btn" onclick="showScreen('module4Screen')">← Balik sa Teksto</button><span id="questionCounter4">Tanong 1 / 12</span></div>
+      <div class="progress-track"><div id="progressBar4" class="progress-bar"></div></div>
+      <div class="quiz-layout">
+        <aside class="quiz-guide-panel">
+          <div class="guide-state-frame"><img id="quizGuideImage4" src="images/kawil-guide-tandaan-clean.png" class="quiz-guide floating" alt="K.A.W.I.L. Guide"></div>
+          <div id="guideMessage4" class="guide-message">Hanapin ang mga clue at piliin ang hinuha na may pinakamalakas na batayan.</div>
+        </aside>
+        <div class="question-card">
+          <span class="eyebrow">MYSTERY CASE</span>
+          <h2 id="questionText4"></h2>
+          <div id="choices4" class="choices"></div>
+          <div id="feedback4" class="feedback hidden"></div>
+          <button id="nextBtn4" class="primary-btn hidden" onclick="nextQuestion4()">SUNOD NA HAMON →</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="result4Screen" class="screen">
+      <div class="result-card">
+        <img id="resultGuideImage4" src="images/kawil-guide-neutral.png" class="result-guide floating" alt="K.A.W.I.L. Guide">
+        <div class="result-icon">🔐</div><span class="eyebrow">MODYUL 4 • RESULTA</span>
+        <h2>Mystery Case Mastery Check</h2>
+        <div class="score" id="finalScore4">0 / 12</div>
+        <div class="percent-score" id="finalPercent4">0%</div>
+        <p id="moduleTime4" class="module-time-result"></p>
+        <p id="scoreMessage4"></p>
+        <div id="masteryMessage4" class="mastery-banner"></div>
+        <div id="resultActions4" class="result-actions"></div>
+      </div>
+    </section>
+
+    <section id="module5Screen" class="screen">
+      <button class="back-btn" onclick="showScreen('dashboardScreen')">← Mapa ng Paglalakbay</button>
+      <div class="module-hero unlocked-next">
+        <div>
+          <span class="eyebrow">MODYUL 5 • HULING HIMPILAN • MASTER LEVEL</span>
+          <h2>⚖️ DECISION CHOICE</h2>
+          <p class="competency">KOMPETENSI: <strong>KRITIKAL NA PAG-UNAWA</strong></p>
+        </div>
+        <div class="mini-guide-wrap">
+          <div class="mini-bubble">Master level na ito. Timbangin ang ebidensiya, suriin ang katuwiran, at piliin ang pasyang may pinakamatibay na batayan.</div>
+          <img src="images/kawil-guide-tandaan-left.png" class="mini-guide floating" alt="K.A.W.I.L. Guide">
+        </div>
+      </div>
+      <div class="instruction-card"><h3>📌 Panuto</h3><p>Basahin at suriin ang teksto. Sa 12 hamon, hindi sapat ang paghahanap lamang ng detalye o pagbuo ng hinuha. Ihambing ang mga pananaw, tukuyin ang lakas at limitasyon ng ebidensiya, suriin ang posibleng epekto ng mga pasya, at piliin ang konklusyong pinakamakatuwiran batay sa buong teksto.</p></div>
+      <article class="story-card">
+        <div class="story-top"><span>📖 BASAHIN AT SURIIN ANG TEKSTO</span><div class="story-tools"><span class="word-count">253 salita</span><button class="audio-btn" onclick="playStoryAudio('storyAudio5','m5')">▶ Pakinggan</button><button class="video-btn" onclick="openStoryVideo('m5')">🎬 Panoorin</button></div></div>
+        <h3>Ang Tahimik na Oras ng Pagbasa</h3>
+        <p class="author-line">May-akda: <strong>Camille Joyce E. Joves</strong></p>
+        <div id="module5Passage">
+          <p>Sa pagpupulong ng Supreme Secondary Learner Government, iminungkahi ng Baitang 7 na gawing “Tahimik na Oras ng Pagbasa” ang unang dalawampung minuto ng tanghalian tuwing Miyerkules. Ayon sa kanilang mungkahi, maaaring gamitin ang silid-aklatan at dalawang bakanteng silid para sa mga nais magbasa. Hindi sapilitan ang pagsali, ngunit hinihikayat ang bawat klase na maglaan ng mga aklat at magtalaga ng dalawang boluntaryong tagapag-ayos.</p>
+          <p>Nagustuhan ni Mara ang layunin ng proyekto dahil madalas niyang nakikitang puno ang silid-aklatan pagkatapos ng klase. Gayunman, napansin niyang may ilang suliranin. May mga mag-aaral na sa tanghalian lamang nakapagsasanay para sa paligsahan, may ilan namang kailangang tapusin ang pangkatang gawain, at limitado ang bentilasyon sa dalawang bakanteng silid.</p>
+          <p>Iminungkahi ni Paolo na gawing sapilitan ang programa upang mas maraming mag-aaral ang magbasa. Tinutulan ito ni Mara. Para sa kaniya, maaaring mawalan ng saysay ang pagbabasa kung gagawin lamang dahil sa utos. Sa halip, iminungkahi niyang subukan muna ang programa sa loob ng apat na Miyerkules, payagan ang ibang tahimik na gawaing pang-akademiko sa hiwalay na lugar, at mangalap ng puna mula sa mga kalahok at hindi kalahok.</p>
+          <p>Nagbigay rin ang librarian ng tala: sa nakaraang buwan, pinakamataas ang bilang ng humihiram ng aklat tuwing Miyerkules, ngunit hindi nito ipinapakita kung gaano katagal o gaano kaunawa ang aktuwal na pagbabasa ng bawat mag-aaral. Dahil dito, napagkasunduan ng konseho na huwag munang gawing permanente ang proyekto. Susuriin nila ang attendance, feedback, paggamit ng mga lugar, at mga suliraning lilitaw sa trial period bago magpasya kung palalawakin, babaguhin, o ihihinto ito.</p>
+        </div>
+        <audio id="storyAudio5" preload="metadata"><source src="audio/modyul5-kuwento.mp3" type="audio/mpeg"></audio>
+      </article>
+      <div class="mission-card"><div><span class="eyebrow">MASTER MISSION</span><h3>⚖️ Timbangin Bago Magpasya!</h3><p>Piliin ang sagot na may pinakamalakas na ebidensiya at katuwiran. Kailangan pa rin ang 80% pataas upang makumpleto ang K.A.W.I.L. Reading Journey.</p></div><button class="primary-btn" onclick="startModule5()">SIMULAN ANG MASTER HAMON →</button></div>
+    </section>
+
+    <section id="quiz5Screen" class="screen">
+      <div class="quiz-top"><button class="back-btn" onclick="showScreen('module5Screen')">← Balik sa Teksto</button><span id="questionCounter5">Tanong 1 / 12</span></div>
+      <div class="progress-track"><div id="progressBar5" class="progress-bar"></div></div>
+      <div class="quiz-layout"><aside class="quiz-guide-panel"><div class="guide-state-frame"><img id="quizGuideImage5" src="images/kawil-guide-tandaan-clean.png" class="quiz-guide floating" alt="K.A.W.I.L. Guide"></div><div id="guideMessage5" class="guide-message">Suriin muna ang ebidensiya at epekto bago pumili ng pasya.</div></aside><div class="question-card"><span class="eyebrow">DECISION CHOICE • MASTER LEVEL</span><h2 id="questionText5"></h2><div id="choices5" class="choices"></div><div id="feedback5" class="feedback hidden"></div><button id="nextBtn5" class="primary-btn hidden" onclick="nextQuestion5()">SUNOD NA HAMON →</button></div></div>
+    </section>
+
+    <section id="result5Screen" class="screen"><div class="result-card"><img id="resultGuideImage5" src="images/kawil-guide-neutral.png" class="result-guide floating" alt="K.A.W.I.L. Guide"><div class="result-icon">🏆</div><span class="eyebrow">MODYUL 5 • PANGWAKAS NA RESULTA</span><h2>Decision Choice Mastery Check</h2><div class="score" id="finalScore5">0 / 12</div><div class="percent-score" id="finalPercent5">0%</div><p id="moduleTime5" class="module-time-result"></p><p id="scoreMessage5"></p><div id="masteryMessage5" class="mastery-banner"></div><div id="resultActions5" class="result-actions"></div></div></section>
+
+
+    <section id="journeyResultScreen" class="screen">
+      <div class="journey-final-card">
+        <div class="world-badge">🏆 K.A.W.I.L. • KUMPLETO</div>
+        <img src="images/kawil-guide-complete.png" class="final-world-guide floating" alt="K.A.W.I.L. Reading Guide">
+        <h2>Tingnan ang Iyong Resulta</h2>
+        <p class="final-lead">Nakumpleto mo ang limang K.A.W.I.L. Game-Based Modules. Makikita rito ang bawat pagtatangka, marka, at oras na ginugol mo sa teksto at bawat hamon. Kapag sumubok kang muli, madaragdag ang bagong trial sa record na ito.</p>
+        <div id="journeySummary"></div>
+        <button class="secondary-btn" onclick="showScreen('dashboardScreen')">← BALIK SA MAPA</button>
+      </div>
+    </section>
+  </main>
+
+
+  <div id="storyAudioModal" class="video-modal hidden" role="dialog" aria-modal="true" aria-labelledby="storyAudioTitle">
+    <div class="video-modal-backdrop" onclick="closeStoryAudio()"></div>
+    <div class="video-modal-card">
+      <div class="video-modal-head">
+        <div><span class="eyebrow">K.A.W.I.L. AUDIO PRESENTATION</span><h3 id="storyAudioTitle">Pakinggan ang Kuwento</h3></div>
+        <button class="video-close-btn" onclick="closeStoryAudio()" aria-label="Isara ang audio">✕</button>
+      </div>
+      <div class="video-frame-wrap">
+        <div class="video-placeholder">
+          <div class="video-placeholder-icon">🎧</div>
+          <strong>Malapit nang maging available ang audio ng kuwentong ito.</strong>
+          <span>Kapag nailagay na ang recorded narration, dito rin idaragdag ang pagsabay ng mga salita sa audio.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="storyVideoModal" class="video-modal hidden" role="dialog" aria-modal="true" aria-labelledby="storyVideoTitle">
+    <div class="video-modal-backdrop" onclick="closeStoryVideo()"></div>
+    <div class="video-modal-card">
+      <div class="video-modal-head">
+        <div><span class="eyebrow">K.A.W.I.L. VIDEO PRESENTATION</span><h3 id="storyVideoTitle">Panoorin ang Kuwento</h3></div>
+        <button class="video-close-btn" onclick="closeStoryVideo()" aria-label="Isara ang video">✕</button>
+      </div>
+      <div class="video-frame-wrap">
+        <video id="storyVideoPlayer" controls playsinline preload="metadata"></video>
+        <div id="storyVideoPlaceholder" class="video-placeholder hidden">
+          <div class="video-placeholder-icon">🎬</div>
+          <strong>Malapit nang maging available ang video ng kuwentong ito.</strong>
+          <span>Maidaragdag ang final video nang hindi binabago ang iba pang bahagi ng modyul.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("service-worker.js");</script>
+</body>
+</html>
