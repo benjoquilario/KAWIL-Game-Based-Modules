@@ -10,37 +10,37 @@ const module1Questions = [
   {
     q:"Sa kuwento, may maliit na papel sa ilalim ng kahon na nagbigay ng pahiwatig tungkol sa nawawalang aklat. Ano ang gamit ng pahiwatig sa bahaging ito?",
     choices:[
-      {t:"nagbibigay ng direksiyon o clue upang may matuklasan",ok:true},{t:"nagbibigay ng buong kasaysayan ng aklat",ok:false},{t:"nagpapaliwanag kung sino ang may-ari ng kahon",ok:false},{t:"nagsasaad ng tuntunin sa paggamit ng silid-aklatan",ok:false}
+      {t:"nagbibigay ng buong kasaysayan ng aklat",ok:false},{t:"nagpapaliwanag kung sino ang may-ari ng kahon",ok:false},{t:"nagsasaad ng tuntunin sa paggamit ng silid-aklatan",ok:false},{t:"nagbibigay ng direksiyon o clue upang may matuklasan",ok:true}
     ]
   },
   {
     q:"Naging masigasig si Mika sa paghahanap. Alin ang pinakamalapit na kahulugan ng masigasig ayon sa kaniyang ginawa?",
     choices:[
-      {t:"maingat at mabagal sa bawat kilos",ok:false},{t:"masikap at pursigidong ginagawa ang gawain",ok:true},{t:"mapanuri at maraming itinatanong",ok:false},{t:"mahinahon at tahimik na naghihintay",ok:false}
+      {t:"masikap at pursigidong ginagawa ang gawain",ok:true},{t:"maingat at mabagal sa bawat kilos",ok:false},{t:"mapanuri at maraming itinatanong",ok:false},{t:"mahinahon at tahimik na naghihintay",ok:false}
     ]
   },
   {
     q:"Alin ang wastong pagkakahati sa pantig ng salitang ‘pahiwatig’?",
     choices:[
-      {t:"pa-hi-wa-tig",ok:true},{t:"pa-hi-wat-ig",ok:false},{t:"pah-i-wa-tig",ok:false},{t:"pa-hiw-a-tig",ok:false}
+      {t:"pa-hi-wat-ig",ok:false},{t:"pah-i-wa-tig",ok:false},{t:"pa-hi-wa-tig",ok:true},{t:"pa-hiw-a-tig",ok:false}
     ]
   },
   {
     q:"Alin ang wastong paghahati sa pantig upang mabasa nang tama ang salitang ‘tagapangasiwa’?",
     choices:[
-      {t:"ta-ga-pa-nga-si-wa",ok:true},{t:"ta-ga-pang-a-si-wa",ok:false},{t:"ta-ga-pa-ngas-i-wa",ok:false},{t:"ta-ga-pan-ga-si-wa",ok:false}
+      {t:"ta-ga-pang-a-si-wa",ok:false},{t:"ta-ga-pa-ngas-i-wa",ok:false},{t:"ta-ga-pa-nga-si-wa",ok:true},{t:"ta-ga-pan-ga-si-wa",ok:false}
     ]
   },
   {
     q:"Aling salita sa kuwento ang nabubuo sa mga pantig na ka-ga-la-kan?",
     choices:[
-      {t:"kagalakan",ok:true},{t:"kasaysayan",ok:false},{t:"kayamanan",ok:false},{t:"kandado",ok:false}
+      {t:"kagalakan",ok:true},{t:"kasaysayan",ok:false},{t:"kayamanan",ok:false},{t:"kagalingan",ok:false}
     ]
   },
   {
     q:"Aling salita ang pinakaangkop upang mabuo ang ideya mula sa kuwento: ‘Dahil sa kaniyang ________, nais ni Mika na malaman kung ano ang nasa lumang kahon.’?",
     choices:[
-      {t:"kagalakan",ok:false},{t:"pag-uusisa",ok:true},{t:"pahiwatig",ok:false},{t:"kasaysayan",ok:false}
+      {t:"kagalakan",ok:false},{t:"pahiwatig",ok:false},{t:"kasaysayan",ok:false},{t:"pag-uusisa",ok:true}
     ]
   },
   {
@@ -52,46 +52,46 @@ const module1Questions = [
   {
     q:"Sa wakas ng kuwento, ano ang tinutukoy ng salitang kagalakan na naramdaman ni Mika?",
     choices:[
-      {t:"tuwa dahil may natuklasan siyang bahagi ng kasaysayan ng paaralan",ok:true},{t:"interes dahil may kandado ang lumang kahon",ok:false},{t:"pagkamangha dahil malaki ang diksyunaryo",ok:false},{t:"kasiyahan dahil naayos niya ang mga aklat sa istante",ok:false}
+      {t:"tuwa dahil may natuklasan siyang bahagi ng kasaysayan ng paaralan",ok:true},{t:"interes dahil may kandado ang lumang kahon",ok:false},{t:"pagkamangha dahil may nakatagong aklat sa likod ng malaking diksiyonaryo",ok:false},{t:"kasiyahan dahil naayos niya ang mga aklat sa istante",ok:false}
     ]
   },
   {
     q:"Aling pangungusap ang gumagamit ng salitang ‘pahiwatig’ sa paraang pinakamalapit sa gamit nito sa kuwento?",
     choices:[
-      {t:"Nag-iwan ang guro ng pahiwatig upang matulungan silang mahanap ang nakatagong aklat.",ok:true},{t:"Isinulat ni Ana ang pahiwatig bilang pamagat ng kaniyang ulat.",ok:false},{t:"Inayos ni Leo ang pahiwatig kasama ng mga aklat sa estante.",ok:false},{t:"Binilang ni Mara ang pahiwatig bago isara ang silid-aklatan.",ok:false}
+      {t:"Nagbigay si Ana ng pahiwatig na pagod na siya kaya maaga siyang nagpaalam sa klase.",ok:false},{t:"Nag-iwan ang guro ng pahiwatig upang matulungan silang mahanap ang nakatagong aklat.",ok:true},{t:"Isinulat ni Leo ang pahiwatig sa pisara bilang paalala tungkol sa takdang-aralin.",ok:false},{t:"Nagpadala si Mara ng pahiwatig sa kaibigan upang ipaalam ang oras ng kanilang pagkikita.",ok:false}
     ]
   },
   {
     q:"Aling sitwasyon ang pinakamalinaw na nagpapakita ng pagiging masigasig?",
     choices:[
-      {t:"Paulit-ulit na sinuri ni Lino ang mga sanggunian hanggang makita niya ang impormasyong kailangan.",ok:true},{t:"Tiningnan ni Lino ang pamagat ng aklat bago ito ibalik sa estante.",ok:false},{t:"Itinanong ni Lino kung saan matatagpuan ang silid-aklatan.",ok:false},{t:"Binasa ni Lino ang isang pahina at isinara agad ang aklat.",ok:false}
+      {t:"Maagang pumasok si Lino sa silid-aklatan upang mauna sa paghiram ng bagong aklat.",ok:false},{t:"Maingat na ibinalik ni Lino ang bawat aklat sa tamang istante matapos itong gamitin.",ok:false},{t:"Tahimik na naghintay si Lino sa guro hanggang maibigay nito ang impormasyong kailangan niya.",ok:false},{t:"Paulit-ulit na sinuri ni Lino ang mga sanggunian hanggang makita niya ang impormasyong kailangan.",ok:true}
     ]
   },
   {
     q:"Aling kilos ang pinakamahusay na halimbawa ng pag-uusisa?",
     choices:[
-      {t:"Nagtanong si Carlo tungkol sa pinagmulan at kahulugan ng lumang larawan.",ok:true},{t:"Inayos ni Carlo ang mga larawan ayon sa laki.",ok:false},{t:"Isinulat ni Carlo ang petsa sa likod ng larawan.",ok:false},{t:"Ibinalik ni Carlo ang larawan sa dating kinalalagyan.",ok:false}
+      {t:"Maingat na inayos ni Carlo ang mga lumang larawan ayon sa petsa ng pagkakakuha.",ok:false},{t:"Ipinakita ni Carlo sa mga kaklase ang lumang larawan na nakita niya sa kahon.",ok:false},{t:"Nagtanong si Carlo tungkol sa pinagmulan at kahulugan ng lumang larawan.",ok:true},{t:"Pinunasan ni Carlo ang alikabok sa lumang larawan bago ito ibinalik sa kahon.",ok:false}
     ]
   }
 ];
 
-const module2Questions = [{"q":"Habang binabasa ni Ana ang unang pangungusap, mabilis siyang nagsalita at halos walang paghinto. Ano ang pinakamainam niyang gawin upang maging malinaw ang diwa?","choices":[{"t":"Bagalan nang bahagya at hatiin ang pangungusap sa mga pariralang may buong diwa.","ok":1},{"t":"Panatilihin ang bilis ngunit lakasan ang boses sa dulo ng bawat pangungusap.","ok":false},{"t":"Huminto pagkatapos ng halos bawat salita upang marinig nang malinaw ang bawat tunog.","ok":false},{"t":"Ulitin ang unang salita ng bawat pangungusap bago ipagpatuloy ang pagbabasa.","ok":false}]},{"q":"Binasa ni Marco ang linyang “Sa tabi ng pasilyo, napansin niya ang tatlong kahong puno ng mga aklat.” Saan siya dapat sandaling huminto?","choices":[{"t":"Pagkatapos ng “pasilyo” dahil dito nagtatapos ang panimulang parirala.","ok":1},{"t":"Pagkatapos ng “napansin” dahil ito ang kilos na ginawa ng tauhan.","ok":false},{"t":"Pagkatapos ng “tatlong” dahil sinusundan ito ng bagay na binibilang.","ok":false},{"t":"Pagkatapos ng “puno” dahil dito inilalarawan ang laman ng mga kahon.","ok":false}]},{"q":"Si Bea ang nakatalagang bumasa ng tanong na “Para saan po ang mga aklat na ito?” Ano ang pinakamainam na paraan ng pagbigkas?","choices":[{"t":"Basahin nang malinaw at gumamit ng angkop na intonasyon na nagpapahiwatig ng pagtatanong.","ok":1},{"t":"Basahin sa iisang tono upang hindi mabago ang kahulugan ng mga salitang ginamit.","ok":false},{"t":"Lakasan ang bawat salita upang maipakitang mahalaga ang tanong sa kuwento.","ok":false},{"t":"Huminto sa bawat dalawang salita upang matiyak na mabagal ang kaniyang pagbasa.","ok":false}]},{"q":"Sa poster ay nakasulat ang “Kumuha, Magbasa, Magbalik.” Paano ito babasahin ni Leo upang malinaw ang tatlong hakbang?","choices":[{"t":"Magkaroon ng maikling paghinto sa bawat kuwit at malinaw na bigkasin ang bawat kilos.","ok":1},{"t":"Basahin ang tatlong salita nang tuloy-tuloy upang marinig bilang iisang utos.","ok":false},{"t":"Bigyang-diin lamang ang “Magbalik” dahil iyon ang pinakahuling hakbang.","ok":false},{"t":"Huminto nang matagal sa bawat kuwit upang maging mabagal ang buong pahayag.","ok":false}]},{"q":"Nahihirapan si Kim sa salitang “pakikipagtulungan.” Ano ang pinakamabisang estratehiya upang mabasa niya ito nang wasto?","choices":[{"t":"Hatiin muna sa makabuluhang pantig at saka basahin muli bilang isang buong salita.","ok":1},{"t":"Laktawan muna ang salita at hulaan ang kahulugan mula sa susunod na pangungusap.","ok":false},{"t":"Basahin lamang ang unang bahagi ng salita at ipagpalagay ang natitirang tunog.","ok":false},{"t":"Palitan ang salita ng mas maikling kasingkahulugan habang binabasa ang teksto.","ok":false}]},{"q":"Binasa ni Nica ang “Agad na tumulong si Lira,” ngunit nais niyang maipakita na hindi nag-atubili si Lira. Aling salita ang nararapat bigyang-diin?","choices":[{"t":"“Agad,” sapagkat ipinapakita nito kung gaano kabilis siyang kumilos.","ok":1},{"t":"“Tumulong,” sapagkat iyon ang pangunahing pandiwa sa pangungusap.","ok":false},{"t":"“Lira,” sapagkat siya ang tauhang nagsagawa ng kilos.","ok":false},{"t":"“Si,” sapagkat ito ang salitang nag-uugnay sa tauhan at sa kilos.","ok":false}]},{"q":"Apat na magkakaklase ang sabay-sabay na bumabasa ng pangungusap tungkol sa paghahati ng gawain. Ano ang pinakamainam nilang gawin upang hindi maputol ang diwa?","choices":[{"t":"Huminto sa mga kuwit at panatilihing magkakasama ang mga salitang bumubuo sa bawat gawain.","ok":1},{"t":"Magpalitan ng mambabasa pagkatapos ng bawat dalawang salita upang pantay ang bahagi.","ok":false},{"t":"Bilisan ang pagbasa sa gitna ng pangungusap at bumagal lamang sa huling gawain.","ok":false},{"t":"Huminto tuwing makakakita ng pandiwa kahit wala namang bantas sa bahaging iyon.","ok":false}]},{"q":"Napapansin ng guro na binabasa ni Jessa ang “munting / aklatan” na may mahabang pagitan. Ano ang mas angkop na pagsasanay?","choices":[{"t":"Basahin ang “munting aklatan” bilang isang natural na parirala bago isama sa buong pangungusap.","ok":1},{"t":"Ulit-ulitin ang “munting” nang mabilis bago basahin ang salitang “aklatan.”","ok":false},{"t":"Lakasan ang “aklatan” upang matakpan ang mahabang paghinto sa pagitan ng mga salita.","ok":false},{"t":"Pantigin nang paisa-isa ang dalawang salita sa tuwing makikita ang parirala sa teksto.","ok":false}]},{"q":"Pagkatapos ng timed reading, tinanong si Carlo kung ano ang unang pangyayaring nagbunsod sa proyekto. Aling detalye ang dapat niyang piliin?","choices":[{"t":"Napansin ni Lira ang mga kahong puno ng aklat sa tabi ng pasilyo.","ok":1},{"t":"Naglagay ang klase ng talaan para sa mga mag-aaral na hihiram.","ok":false},{"t":"Hinati ng mga mag-aaral ang gawain sa paglilinis at pag-aayos.","ok":false},{"t":"Natapos ang munting aklatan bago tumunog ang kampana para sa klase.","ok":false}]},{"q":"May bagong mag-aaral na nagtanong kung bakit ginawa ang munting aklatan sa pasilyo. Ano ang pinakatumpak na paliwanag batay sa teksto?","choices":[{"t":"Upang magkaroon ng madaling mapagkukunan ng babasahin ang mga mag-aaral habang naghihintay ng klase.","ok":1},{"t":"Upang mailipat sa pasilyo ang lahat ng aklat na hindi na kasya sa pangunahing silid-aklatan.","ok":false},{"t":"Upang magkaroon ng permanenteng lugar ang klase para sa kanilang mga pangkatang pagpupulong.","ok":false},{"t":"Upang maitago ang mga lumang aklat na hindi na ginagamit sa regular na mga asignatura.","ok":false}]},{"q":"Dalawang pangkat ang parehong gustong matapos agad ang pag-aayos. Aling ginawa ng klase sa teksto ang pinakamainam nilang tularan?","choices":[{"t":"Hatiin ang mga gawain at magtulungan upang sabay-sabay na matapos ang magkakaibang bahagi.","ok":1},{"t":"Unahin lamang ang pinakamadaling gawain at ipagpaliban ang iba hanggang sa susunod na araw.","ok":false},{"t":"Ibigay sa iisang mag-aaral ang pagdedesisyon at hintayin ang kaniyang utos sa bawat hakbang.","ok":false},{"t":"Gawin muna nang paisa-isa ang bawat gawain upang walang dalawang pangkat na kumilos nang sabay.","ok":false}]},{"q":"Sa ikalawang pagbasa, tama ang lahat ng salita ni Luis ngunit napakabilis at hindi malinaw ang mga parirala. Ano ang pinakamainam niyang baguhin?","choices":[{"t":"Gumamit ng katamtamang bilis, malinaw na bigkas, at natural na paghinto ayon sa diwa.","ok":1},{"t":"Panatilihin ang bilis at dagdagan lamang ang lakas ng boses sa mahahalagang salita.","ok":false},{"t":"Bumagal sa lahat ng salita at huminto pagkatapos ng bawat isa upang maiwasan ang pagkakamali.","ok":false},{"t":"Ulitin ang bawat pangungusap nang dalawang beses kahit tama na ang unang pagbasa niya.","ok":false}]}];
+const module2Questions = [{"q":"Habang binabasa ni Ana ang unang pangungusap, mabilis siyang nagsalita at halos walang paghinto. Ano ang pinakamainam niyang gawin upang maging malinaw ang diwa?","choices":[{"t":"Panatilihin ang bilis ngunit lakasan ang boses sa dulo ng bawat pangungusap.","ok":false},{"t":"Huminto pagkatapos ng halos bawat salita upang marinig nang malinaw ang bawat tunog.","ok":false},{"t":"Bagalan nang bahagya at hatiin ang pangungusap sa mga pariralang may buong diwa.","ok":1},{"t":"Ulitin ang unang salita ng bawat pangungusap bago ipagpatuloy ang pagbabasa.","ok":false}]},{"q":"Binasa ni Marco ang linyang “Sa tabi ng pasilyo, napansin niya ang tatlong kahong puno ng mga aklat.” Saan siya dapat sandaling huminto?","choices":[{"t":"Pagkatapos ng “pasilyo” dahil dito nagtatapos ang panimulang parirala.","ok":1},{"t":"Pagkatapos ng “napansin” dahil ito ang kilos na ginawa ng tauhan.","ok":false},{"t":"Pagkatapos ng “tatlong” dahil sinusundan ito ng bagay na binibilang.","ok":false},{"t":"Pagkatapos ng “puno” dahil dito inilalarawan ang laman ng mga kahon.","ok":false}]},{"q":"Si Bea ang nakatalagang bumasa ng tanong na “Para saan po ang mga aklat na ito?” Ano ang pinakamainam na paraan ng pagbigkas?","choices":[{"t":"Basahin sa iisang tono upang hindi mabago ang kahulugan ng mga salitang ginamit.","ok":false},{"t":"Lakasan ang bawat salita upang maipakitang mahalaga ang tanong sa kuwento.","ok":false},{"t":"Huminto sa bawat dalawang salita upang matiyak na mabagal ang kaniyang pagbasa.","ok":false},{"t":"Basahin nang malinaw at gumamit ng angkop na intonasyon na nagpapahiwatig ng pagtatanong.","ok":1}]},{"q":"Sa poster ay nakasulat ang “Kumuha, Magbasa, Magbalik.” Paano ito babasahin ni Leo upang malinaw ang tatlong hakbang?","choices":[{"t":"Basahin ang tatlong salita nang tuloy-tuloy upang marinig bilang iisang utos.","ok":false},{"t":"Magkaroon ng maikling paghinto sa bawat kuwit at malinaw na bigkasin ang bawat kilos.","ok":1},{"t":"Bigyang-diin lamang ang “Magbalik” dahil iyon ang pinakahuling hakbang.","ok":false},{"t":"Huminto nang matagal sa bawat kuwit upang maging mabagal ang buong pahayag.","ok":false}]},{"q":"Nahihirapan si Kim sa salitang “pakikipagtulungan.” Ano ang pinakamabisang estratehiya upang mabasa niya ito nang wasto?","choices":[{"t":"Laktawan muna ang salita at hulaan ang kahulugan mula sa susunod na pangungusap.","ok":false},{"t":"Basahin lamang ang unang bahagi ng salita at ipagpalagay ang natitirang tunog.","ok":false},{"t":"Palitan ang salita ng mas maikling kasingkahulugan habang binabasa ang teksto.","ok":false},{"t":"Hatiin muna sa makabuluhang pantig at saka basahin muli bilang isang buong salita.","ok":1}]},{"q":"Binasa ni Nica ang “Agad na tumulong si Lira,” ngunit nais niyang maipakita na hindi nag-atubili si Lira. Aling salita ang nararapat bigyang-diin?","choices":[{"t":"“Tumulong,” sapagkat iyon ang pangunahing pandiwa sa pangungusap.","ok":false},{"t":"“Lira,” sapagkat siya ang tauhang nagsagawa ng kilos.","ok":false},{"t":"“Agad,” sapagkat ipinapakita nito kung gaano kabilis siyang kumilos.","ok":1},{"t":"“Tumulong si Lira,” sapagkat ito ang buong kilos na dapat marinig nang malinaw.","ok":false}]},{"q":"Apat na magkakaklase ang sabay-sabay na bumabasa ng pangungusap tungkol sa paghahati ng gawain. Ano ang pinakamainam nilang gawin upang hindi maputol ang diwa?","choices":[{"t":"Huminto sa mga kuwit at panatilihing magkakasama ang mga salitang bumubuo sa bawat gawain.","ok":1},{"t":"Magpalitan ng mambabasa pagkatapos ng bawat dalawang salita upang pantay ang bahagi.","ok":false},{"t":"Bilisan ang pagbasa sa gitna ng pangungusap at bumagal lamang sa huling gawain.","ok":false},{"t":"Huminto tuwing makakakita ng pandiwa kahit wala namang bantas sa bahaging iyon.","ok":false}]},{"q":"Napapansin ng guro na binabasa ni Jessa ang “munting / aklatan” na may mahabang pagitan. Ano ang mas angkop na pagsasanay?","choices":[{"t":"Ulit-ulitin ang “munting” nang mabilis bago basahin ang salitang “aklatan.”","ok":false},{"t":"Basahin ang “munting aklatan” bilang isang natural na parirala bago isama sa buong pangungusap.","ok":1},{"t":"Lakasan ang “aklatan” upang matakpan ang mahabang paghinto sa pagitan ng mga salita.","ok":false},{"t":"Pantigin nang paisa-isa ang dalawang salita sa tuwing makikita ang parirala sa teksto.","ok":false}]},{"q":"Pagkatapos ng timed reading, tinanong si Carlo kung ano ang unang pangyayaring nagbunsod sa proyekto. Aling detalye ang dapat niyang piliin?","choices":[{"t":"Naglagay ang klase ng talaan para sa mga mag-aaral na hihiram.","ok":false},{"t":"Napansin ni Lira ang mga kahong puno ng aklat sa tabi ng pasilyo.","ok":1},{"t":"Hinati ng mga mag-aaral ang gawain sa paglilinis at pag-aayos.","ok":false},{"t":"Natapos ang munting aklatan bago tumunog ang kampana para sa klase.","ok":false}]},{"q":"May bagong mag-aaral na nagtanong kung bakit ginawa ang munting aklatan sa pasilyo. Ano ang pinakatumpak na paliwanag batay sa teksto?","choices":[{"t":"Upang mailipat sa pasilyo ang lahat ng aklat na hindi na kasya sa pangunahing silid-aklatan.","ok":false},{"t":"Upang magkaroon ng permanenteng lugar ang klase para sa kanilang mga pangkatang pagpupulong.","ok":false},{"t":"Upang maitago ang mga lumang aklat na hindi na ginagamit sa regular na mga asignatura.","ok":false},{"t":"Upang magkaroon ng madaling mapagkukunan ng babasahin ang mga mag-aaral habang naghihintay ng klase.","ok":1}]},{"q":"Dalawang pangkat ang parehong gustong matapos agad ang pag-aayos. Aling ginawa ng klase sa teksto ang pinakamainam nilang tularan?","choices":[{"t":"Hatiin ang mga gawain at magtulungan upang sabay-sabay na matapos ang magkakaibang bahagi.","ok":1},{"t":"Unahin lamang ang pinakamadaling gawain at ipagpaliban ang iba hanggang sa susunod na araw.","ok":false},{"t":"Ibigay sa iisang mag-aaral ang pagdedesisyon at hintayin ang kaniyang utos sa bawat hakbang.","ok":false},{"t":"Gawin muna nang paisa-isa ang bawat gawain upang walang dalawang pangkat na kumilos nang sabay.","ok":false}]},{"q":"Sa ikalawang pagbasa, tama ang lahat ng salita ni Luis ngunit napakabilis at hindi malinaw ang mga parirala. Ano ang pinakamainam niyang baguhin?","choices":[{"t":"Panatilihin ang bilis at dagdagan lamang ang lakas ng boses sa mahahalagang salita.","ok":false},{"t":"Bumagal sa lahat ng salita at huminto pagkatapos ng bawat isa upang maiwasan ang pagkakamali.","ok":false},{"t":"Gumamit ng katamtamang bilis, malinaw na bigkas, at natural na paghinto ayon sa diwa.","ok":1},{"t":"Ulitin ang bawat pangungusap nang dalawang beses kahit tama na ang unang pagbasa niya.","ok":false}]}];
 
 const module3Questions = [
   {
     q:"Kailan nagtipon ang mga mag-aaral ng Baitang 7-Mabini para ayusin ang gulayan?",
     choices:[
-      {t:"Noong Martes ng umaga bago bumalik sa kanilang klase",ok:true},
       {t:"Noong Lunes ng hapon pagkatapos ng kanilang klase",ok:false},
       {t:"Noong Miyerkules ng umaga bago ang unang asignatura",ok:false},
-      {t:"Noong Biyernes ng hapon matapos ang huling asignatura",ok:false}
+      {t:"Noong Biyernes ng hapon matapos ang huling asignatura",ok:false},
+      {t:"Noong Martes ng umaga bago bumalik sa kanilang klase",ok:true}
     ]
   },
   {
     q:"Saan matatagpuan ang maliit na gulayan na inayos ng klase?",
     choices:[
-      {t:"Sa likod ng kanilang silid-aralan",ok:true},
       {t:"Sa harap ng kanilang silid-aralan",ok:false},
+      {t:"Sa likod ng kanilang silid-aralan",ok:true},
       {t:"Sa tabi ng pangunahing silid-aklatan",ok:false},
       {t:"Sa gilid ng covered court ng paaralan",ok:false}
     ]
@@ -99,9 +99,9 @@ const module3Questions = [
   {
     q:"Aling tatlong uri ng punla ang dala ng pangkat ayon sa teksto?",
     choices:[
-      {t:"Pechay, kamatis, at talong",ok:true},
       {t:"Pechay, sitaw, at kalabasa",ok:false},
       {t:"Kamatis, okra, at talong",ok:false},
+      {t:"Pechay, kamatis, at talong",ok:true},
       {t:"Talong, mustasa, at sili",ok:false}
     ]
   },
@@ -117,8 +117,8 @@ const module3Questions = [
   {
     q:"Ano ang pangunahing gawain ng unang pangkat?",
     choices:[
-      {t:"Naglinis ng lupa at nag-alis ng tuyong dahon",ok:true},
       {t:"Gumawa ng mga tudling at inayos ang mga hanay",ok:false},
+      {t:"Naglinis ng lupa at nag-alis ng tuyong dahon",ok:true},
       {t:"Nagtanim ng mga punla at inayos ang pagitan",ok:false},
       {t:"Naghanda ng mga karatula at pangalan ng halaman",ok:false}
     ]
@@ -126,10 +126,10 @@ const module3Questions = [
   {
     q:"Ano ang ginawa ng ikalawang pangkat ayon sa pagkakahati ng gawain?",
     choices:[
-      {t:"Gumawa sila ng mga tudling para sa mga halaman",ok:true},
       {t:"Naglinis sila ng lupa at nag-alis ng dahon",ok:false},
       {t:"Nagtanim sila ng mga punla sa bawat hanay",ok:false},
-      {t:"Nagsulat sila ng mga pangalan sa mga karatula",ok:false}
+      {t:"Nagsulat sila ng mga pangalan sa mga karatula",ok:false},
+      {t:"Gumawa sila ng mga tudling para sa mga halaman",ok:true}
     ]
   },
   {
@@ -144,19 +144,19 @@ const module3Questions = [
   {
     q:"Bandang anong oras natapos ng mga mag-aaral ang pagtatanim?",
     choices:[
-      {t:"Bandang alas-diyes ng umaga",ok:true},
       {t:"Bandang alas-nuwebe ng umaga",ok:false},
       {t:"Bandang alas-onse ng umaga",ok:false},
+      {t:"Bandang alas-diyes ng umaga",ok:true},
       {t:"Bandang alas-dose ng tanghali",ok:false}
     ]
   },
   {
     q:"Saan nila inilagay ang iskedyul ng pagdidilig matapos ang pagtatanim?",
     choices:[
-      {t:"Sa tabi ng pinto ng kanilang silid-aralan",ok:true},
       {t:"Sa tabi ng bintana ng kanilang silid-aralan",ok:false},
       {t:"Sa gitna ng pisara ng kanilang silid-aralan",ok:false},
-      {t:"Sa labas ng tarangkahan ng kanilang paaralan",ok:false}
+      {t:"Sa labas ng tarangkahan ng kanilang paaralan",ok:false},
+      {t:"Sa tabi ng pinto ng kanilang silid-aralan",ok:true}
     ]
   },
   {
@@ -171,17 +171,17 @@ const module3Questions = [
   {
     q:"Alin ang paalalang tuwirang ibinigay ni Gng. Ramos bago sila bumalik sa klase?",
     choices:[
-      {t:"Huwag apakan ang tudling at huwag pumitas nang walang pahintulot",ok:true},
       {t:"Huwag magdilig sa umaga at huwag magdala ng sariling kagamitan",ok:false},
       {t:"Huwag maglagay ng karatula at huwag galawin ang iskedyul ng klase",ok:false},
+      {t:"Huwag apakan ang tudling at huwag pumitas nang walang pahintulot",ok:true},
       {t:"Huwag magtanim ng bagong punla at huwag maglinis nang walang guro",ok:false}
     ]
   },
   {
     q:"Kailan nila napagkasunduang sukatin ang paglaki ng mga halaman at itala ang resulta?",
     choices:[
-      {t:"Tuwing Biyernes at ilalagay sa kanilang talaang-pangklase",ok:true},
       {t:"Tuwing Lunes at ilalagay sa kanilang talaang-pangklase",ok:false},
+      {t:"Tuwing Biyernes at ilalagay sa kanilang talaang-pangklase",ok:true},
       {t:"Tuwing Miyerkules at ilalagay sa kanilang talaang-pangklase",ok:false},
       {t:"Tuwing Huwebes at ilalagay sa kanilang talaang-pangklase",ok:false}
     ]
@@ -202,17 +202,17 @@ const module4Questions = [
   {
     q:"Batay sa basang kurtina, tubig sa ilalim ng bintana, at nakatakip na plastik, ano ang malamang na nangyari bago dumating si Aya?",
     choices:[
-      {t:"Pumasok ang ulan sa bintana kaya may nagtakip sa mga aklat upang hindi mabasa.",ok:true},
       {t:"Nilinis ang reading corner kaya tinakpan muna ang mga aklat habang pinupunasan ang sahig.",ok:false},
       {t:"Inayos ang kurtina kaya inilipat ang mga aklat at saka nilagyan ng plastik ang estante.",ok:false},
+      {t:"Pumasok ang ulan sa bintana kaya may nagtakip sa mga aklat upang hindi mabasa.",ok:true},
       {t:"Naghanda ng bagong display kaya tinakpan ang mga aklat bago magsimula ang dekorasyon.",ok:false}
     ]
   },
   {
     q:"Sino ang pinakamalamang na nagsulat ng ‘Naabutan bago mabasa’ sa pisara?",
     choices:[
-      {t:"Si Noel, dahil dumating siyang may basahan at agad na tumingin sa bintana.",ok:true},
       {t:"Si Aya, dahil siya ang nakakita sa mensahe nang bumalik para sa kaniyang folder.",ok:false},
+      {t:"Si Noel, dahil dumating siyang may basahan at agad na tumingin sa bintana.",ok:true},
       {t:"Ang guro, dahil karaniwan siyang nagbibigay ng paalala sa reading corner.",ok:false},
       {t:"Isang kaklase, dahil maaaring may naiwan ding gamit sa loob ng silid-aralan.",ok:false}
     ]
@@ -220,10 +220,10 @@ const module4Questions = [
   {
     q:"Ano ang ipinahihiwatig ng pahayag ni Noel na ‘Buti na lang, hindi na lumakas ulit ang hangin’?",
     choices:[
-      {t:"Nag-aalala siyang muling mapasok ng ulan ang bintana at mabasa ang reading corner.",ok:true},
       {t:"Nag-aalala siyang mahirapan silang makauwi kapag muling lumakas ang hangin sa labas.",ok:false},
       {t:"Nag-aalala siyang matumba ang mga upuan at mesa kapag bumalik ang malakas na hangin.",ok:false},
-      {t:"Nag-aalala siyang mawala ang kaniyang payong kapag lumakas muli ang ulan sa paaralan.",ok:false}
+      {t:"Nag-aalala siyang mawala ang kaniyang payong kapag lumakas muli ang ulan sa paaralan.",ok:false},
+      {t:"Nag-aalala siyang muling mapasok ng ulan ang bintana at mabasa ang reading corner.",ok:true}
     ]
   },
   {
@@ -238,59 +238,59 @@ const module4Questions = [
   {
     q:"Ano ang pinakamalakas na patunay na may nagprotekta sa mga aklat bago dumating si Aya?",
     choices:[
-      {t:"Basa ang paligid ng bintana ngunit tuyo ang mga aklat sa ilalim ng malaking plastik.",ok:true},
       {t:"Patay ang ilaw ngunit nakabukas nang kaunti ang pinto nang dumating si Aya.",ok:false},
+      {t:"Basa ang paligid ng bintana ngunit tuyo ang mga aklat sa ilalim ng malaking plastik.",ok:true},
       {t:"May basang asul na payong na nakasandal malapit sa kabinet ng silid-aralan.",ok:false},
       {t:"Kumakaunti na ang mga tao sa gusali habang bumabalik si Aya sa kanilang silid.",ok:false}
     ]
   },
   {
-    q:"Anong katangian ni Noel ang pinakamakatuwirang mahinuha mula sa kaniyang mga ginawa?",
+    q:"Anong katangian ni Noel ang pinakamakatwirang mahinuha mula sa kaniyang mga ginawa?",
     choices:[
-      {t:"May malasakit at kusang kumikilos upang pangalagaan ang mga gamit ng klase.",ok:true},
       {t:"Mahilig mag-ayos ng silid kapag wala nang ibang tao sa loob ng paaralan.",ok:false},
       {t:"Mahiyain at iniiwasang ipaliwanag sa iba ang mga bagay na kaniyang ginagawa.",ok:false},
+      {t:"May malasakit at kusang kumikilos upang pangalagaan ang mga gamit ng klase.",ok:true},
       {t:"Masinop at laging inuuwi ang mga gamit na maaaring maiwan sa silid-aralan.",ok:false}
     ]
   },
   {
     q:"Kung hindi natakpan ang mga aklat at muling lumakas ang hangin, ano ang pinakamalamang na mangyari?",
     choices:[
-      {t:"Mas maraming tubig ang papasok sa bintana at maaaring mabasa ang mga aklat.",ok:true},
       {t:"Magsasara nang kusa ang bintana at mananatiling tuyo ang reading corner.",ok:false},
       {t:"Matutuyo agad ang kurtina dahil malakas ang hangin na papasok sa silid.",ok:false},
-      {t:"Lilipat ang tubig sa may pinto at hindi na aabot sa bahagi ng mga aklat.",ok:false}
+      {t:"Lilipat ang tubig sa may pinto at hindi na aabot sa bahagi ng mga aklat.",ok:false},
+      {t:"Mas maraming tubig ang papasok sa bintana at maaaring mabasa ang mga aklat.",ok:true}
     ]
   },
   {
     q:"Ano ang maaaring dahilan kung bakit may dalang basahan si Noel nang bumalik siya sa silid?",
     choices:[
-      {t:"Balak niyang punasan ang tubig na naiwan sa sahig malapit sa reading corner.",ok:true},
       {t:"Balak niyang linisin ang pisara matapos isulat ang mensahe para sa kaniyang kaklase.",ok:false},
       {t:"Balak niyang punasan ang basang payong bago ito dalhin pauwi matapos ang ulan.",ok:false},
+      {t:"Balak niyang punasan ang tubig na naiwan sa sahig malapit sa reading corner.",ok:true},
       {t:"Balak niyang linisin ang kabinet dahil may alikabok sa tabi ng reading corner.",ok:false}
     ]
   },
   {
     q:"Ano ang ipinahihiwatig ng pagtulong ni Aya sa pag-aayos ng kurtina at pagligpit ng plastik?",
     choices:[
-      {t:"Naunawaan niya ang sitwasyon at pinili niyang makibahagi sa pag-aayos ng silid.",ok:true},
       {t:"Nais niyang malaman kung sino ang nag-iwan ng payong kaya nanatili muna siya roon.",ok:false},
       {t:"Nais niyang matapos ang gawain ni Noel upang mabilis niyang makuha ang kaniyang folder.",ok:false},
-      {t:"Nais niyang patunayan na kaya niyang ayusin ang reading corner nang walang tulong ng guro.",ok:false}
+      {t:"Nais niyang patunayan na kaya niyang ayusin ang reading corner nang walang tulong ng guro.",ok:false},
+      {t:"Naunawaan niya ang sitwasyon at pinili niyang makibahagi sa pag-aayos ng silid.",ok:true}
     ]
   },
   {
     q:"Alin ang pinakamahusay na konklusyon tungkol sa mga pangyayaring nakita ni Aya?",
     choices:[
-      {t:"May bumalik sa silid upang pigilan ang ulan na makasira sa mga aklat at ayusin ang nabasang bahagi.",ok:true},
       {t:"May naiwan sa silid upang maglinis ng reading corner bago magsimula ang susunod na araw ng klase.",ok:false},
+      {t:"May bumalik sa silid upang pigilan ang ulan na makasira sa mga aklat at ayusin ang nabasang bahagi.",ok:true},
       {t:"May nagbukas ng bintana upang pumasok ang hangin at mapatuyo ang basang kurtina sa reading corner.",ok:false},
       {t:"May naghanda ng mga aklat para sa bagong display at pansamantalang tinakpan ang mga ito ng plastik.",ok:false}
     ]
   },
   {
-    q:"Kung magpapatuloy ang ganitong kilos nina Aya at Noel, ano ang pinakamakatuwirang mahinuha tungkol sa reading corner?",
+    q:"Kung magpapatuloy ang ganitong kilos nina Aya at Noel, ano ang pinakamakatwirang mahinuha tungkol sa reading corner?",
     choices:[
       {t:"Mas mapangangalagaan ito dahil may mga mag-aaral na kusang nagmamalasakit sa mga gamit.",ok:true},
       {t:"Mas madalas itong isasara dahil maaaring makalimutan ng mga mag-aaral ang kanilang mga gamit.",ok:false},
@@ -301,7 +301,7 @@ const module4Questions = [
 ];
 
 
-const module5Questions = [{"q":"May apat na mag-aaral na gustong gumamit ng tahimik na reading area, ngunit iisa na lamang ang bakanteng mesa. Bilang student leader, ano ang pinakatumpak na pasya?","choices":[{"t":"Ialok ang mesa sa nangangailangan ng pinakatahimik na lugar at tulungang humanap ng ibang angkop na puwesto ang iba.","ok":true},{"t":"Ayusin ang apat sa magkakaibang available na lugar at ipaliwanag kung alin ang pinakatahimik at alin ang mas maluwag.","ok":false},{"t":"Hayaang magkasundo ang apat kung sino ang gagamit ng mesa habang naghahanda ka ng alternatibong lugar para sa iba.","ok":false},{"t":"Gumawa ng maikling rotation upang lahat ay magkaroon ng pagkakataong gamitin ang mesa habang nagpapatuloy ang reading hour.","ok":false}]},{"q":"Napansin mong mas maraming humihiram ng aklat, ngunit hindi malinaw kung natatapos o nauunawaan nila ang binabasa. Ano ang pinakamainam na susunod na hakbang?","choices":[{"t":"Magdagdag ng maikling comprehension check at reading log upang maiugnay ang panghihiram sa aktuwal na pagbasa at pag-unawa.","ok":true},{"t":"Magpatuloy sa pagbilang ng hiniram na aklat at ikumpara ito sa attendance upang makita kung pareho silang tumataas.","ok":false},{"t":"Magtanong sa piling kalahok kung anong aklat ang nagustuhan nila at gamitin ang kanilang sagot bilang dagdag na feedback.","ok":false},{"t":"Maghanda ng mas maraming popular na pamagat upang makita kung tataas pa ang bilang ng mga humihiram sa susunod na trial.","ok":false}]},{"q":"Isang kaklase ang mabilis matapos sa teksto ngunit mababa ang comprehension score. Ano ang pinakamakabuluhang payo?","choices":[{"t":"Subukang bawasan nang kaunti ang bilis at huminto sa mahahalagang bahagi upang masuri kung nauunawaan ang binabasa.","ok":true},{"t":"Panatilihin ang kasalukuyang bilis ngunit maglaan ng oras sa dulo upang balikan ang mga bahaging hindi malinaw.","ok":false},{"t":"Gumamit ng daliri o pananda habang nagbabasa upang masundan nang maayos ang bawat linya ng teksto.","ok":false},{"t":"Pumili muna ng mas maikling teksto at unti-unting dagdagan ang haba habang pinananatili ang tuloy-tuloy na pagbasa.","ok":false}]},{"q":"Sa feedback, karamihan ay nasiyahan sa programa ngunit ilang tahimik na mag-aaral ang hindi sumagot sa survey. Ano ang pinakamainam na paraan upang maging mas patas ang datos?","choices":[{"t":"Magbigay ng anonymous na paraan ng pagsagot at hikayatin ang lahat ng uri ng kalahok na magbigay ng puna.","ok":true},{"t":"Magdagdag ng maikling group discussion pagkatapos ng session upang makakuha pa ng komento mula sa mga nais magsalita.","ok":false},{"t":"Mag-interview ng ilang regular na kalahok at ihambing ang kanilang sagot sa naunang survey responses.","ok":false},{"t":"Maglagay ng suggestion box sa library upang magkaroon ng dagdag na paraan ng pagbibigay ng opinyon sa mga susunod na linggo.","ok":false}]},{"q":"May dalawang mungkahi: dagdagan ang reading time o dagdagan ang comprehension activities. Ipinapakita ng datos na sapat ang oras ngunit mababa ang pag-unawa. Ano ang pipiliin mo?","choices":[{"t":"Dagdagan ang comprehension activities dahil iyon ang mas direktang tumutugon sa suliraning ipinakita ng datos.","ok":true},{"t":"Dagdagan nang kaunti ang reading time at obserbahan kung kusang tataas ang pag-unawa sa susunod na session.","ok":false},{"t":"Pagsamahin agad ang dalawang pagbabago upang mas maraming bahagi ng programa ang mapahusay nang sabay-sabay.","ok":false},{"t":"Panatilihin muna ang kasalukuyang setup at kumuha pa ng attendance data bago magpasya kung alin ang babaguhin.","ok":false}]},{"q":"May mag-aaral na hindi nakahiram ng library book ngunit buong oras na nagbasa ng sarili niyang aklat. Paano siya dapat itala?","choices":[{"t":"Itala siyang aktibong kalahok sa reading activity at hiwalay na markahan na sariling aklat ang kaniyang ginamit.","ok":true},{"t":"Isama siya sa attendance at gumawa ng hiwalay na tala para sa mga kalahok na walang library borrowing record.","ok":false},{"t":"Itala ang oras ng kaniyang pagbabasa at idagdag ito sa observation notes upang may ebidensiya ng kaniyang participation.","ok":false},{"t":"Hilinging magbigay siya ng maikling reflection tungkol sa binasa upang magkaroon ng karagdagang record ng kaniyang gawain.","ok":false}]},{"q":"Sa isang session, tumaas ang attendance ngunit naging maingay ang silid at bumaba ang completion rate. Ano ang pinakamainam na pagbabago?","choices":[{"t":"Hatiin ang mga kalahok sa mas maliliit na grupo at gumamit ng available na tahimik na espasyo upang mapanatili ang kalidad ng pagbasa.","ok":true},{"t":"Magtalaga ng student marshals sa bawat bahagi ng silid upang makatulong sa pagpapanatili ng tahimik na kapaligiran.","ok":false},{"t":"Magbigay ng malinaw na paalala sa simula ng session at obserbahan kung bababa ang ingay sa susunod na trial.","ok":false},{"t":"Ayusin ang seating arrangement upang magkaroon ng mas malaking pagitan ang mga mag-aaral habang nagbabasa.","ok":false}]},{"q":"May dalawang magkasalungat na datos: mataas ang satisfaction rating ngunit halos walang pagbabago sa comprehension. Ano ang pinakatumpak na interpretasyon?","choices":[{"t":"Maganda ang karanasan ng mga kalahok, ngunit hindi pa sapat ang ebidensiya upang sabihing umunlad ang comprehension.","ok":true},{"t":"Positibo ang pagtanggap sa programa, kaya maaari itong ipagpatuloy habang kumukuha pa ng mas maraming comprehension data.","ok":false},{"t":"May indikasyon ng tagumpay sa engagement, kaya dapat suriin kung kailangan lamang baguhin ang paraan ng comprehension assessment.","ok":false},{"t":"Mahalaga ang dalawang resulta, kaya kailangang ikumpara pa ang attendance, feedback, at scores bago gumawa ng pangmatagalang pasya.","ok":false}]},{"q":"Napansin mong may mga mag-aaral na pinipili lamang ang pinakamaikling teksto upang mabilis matapos. Ano ang pinakamainam na tugon?","choices":[{"t":"Magbigay ng pagpipiliang teksto na magkakaiba ang paksa ngunit kontrolado ang antas at inaasahang reading task.","ok":true},{"t":"Maghanda ng listahan ng inirerekomendang teksto at hayaang pumili ang mag-aaral ayon sa interes at oras na mayroon siya.","ok":false},{"t":"Magpatupad ng minimum reading time upang mahikayat silang manatili sa gawain kahit maikli ang napiling teksto.","ok":false},{"t":"Magdagdag ng reflection question sa bawat teksto upang magkaroon ng pare-parehong gawain pagkatapos magbasa.","ok":false}]},{"q":"Bago palawakin ang programa sa ibang seksyon, ano ang pinakamahalagang ihanda upang maging maihahambing ang resulta?","choices":[{"t":"Pare-parehong panuto, mastery criterion, paraan ng pagtatala, at malinaw na proseso ng assessment sa bawat seksyon.","ok":true},{"t":"Isang common schedule at parehong bilang ng upuan upang maging halos pareho ang pisikal na setup ng bawat session.","ok":false},{"t":"Parehong listahan ng aklat at reading materials upang pare-pareho ang pagpipiliang makikita ng bawat seksyon.","ok":false},{"t":"Isang orientation para sa student leaders upang pareho ang paraan nila ng paggabay at pagbibigay ng paalala.","ok":false}]},{"q":"Isang mag-aaral ang naka-83% sa unang trial at 92% sa ikalawa. Ano ang pinakatumpak na paggamit sa dalawang resultang ito?","choices":[{"t":"Panatilihin ang parehong trial records upang makita ang mastery at ang pagbabago ng performance sa bawat pagtatangka.","ok":true},{"t":"Gamitin ang 92% bilang final mastery score ngunit panatilihin ang 83% bilang bahagi ng progress record.","ok":false},{"t":"Ihambing ang dalawang scores sa oras na ginugol upang makita kung may pagbabago sa bilis ng pagsagot at performance.","ok":false},{"t":"Isama ang dalawang scores sa learner profile at gamitin ang mas mataas na marka sa pagpapasya kung bubuksan ang susunod na module.","ok":false}]},{"q":"Matapos ang trial, tumaas ang participation at borrowing, gumanda ang feedback, ngunit maliit lamang ang pag-angat sa comprehension. Bilang evaluator, ano ang pinakamainam na rekomendasyon?","choices":[{"t":"Ipagpatuloy ang intervention na may tiyak na pagbabago sa comprehension activities at muling sukatin bago ito palawakin.","ok":true},{"t":"Ipagpatuloy ang kasalukuyang programa sa mas mahabang panahon upang makita kung lalakas pa ang comprehension trend.","ok":false},{"t":"Palawakin muna sa isang karagdagang seksyon habang kinokolekta ang parehong participation, borrowing, feedback, at comprehension data.","ok":false},{"t":"Panatilihin muna sa kasalukuyang grupo at magsagawa ng learner interviews upang matukoy kung aling bahagi ang dapat unahing baguhin.","ok":false}]}];
+const module5Questions = [{"q":"May apat na mag-aaral na gustong gumamit ng tahimik na reading area, ngunit iisa na lamang ang bakanteng mesa. Bilang student leader, ano ang pinakatumpak na pasya?","choices":[{"t":"Ayusin ang apat sa magkakaibang available na lugar at ipaliwanag kung alin ang pinakatahimik at alin ang mas maluwag.","ok":false},{"t":"Ialok ang mesa sa nangangailangan ng pinakatahimik na lugar at tulungang humanap ng ibang angkop na puwesto ang iba.","ok":true},{"t":"Hayaang magkasundo ang apat kung sino ang gagamit ng mesa habang naghahanda ka ng alternatibong lugar para sa iba.","ok":false},{"t":"Gumawa ng maikling rotation upang lahat ay magkaroon ng pagkakataong gamitin ang mesa habang nagpapatuloy ang reading hour.","ok":false}]},{"q":"Napansin mong mas maraming humihiram ng aklat, ngunit hindi malinaw kung natatapos o nauunawaan nila ang binabasa. Ano ang pinakamainam na susunod na hakbang?","choices":[{"t":"Magdagdag ng maikling comprehension check at reading log upang maiugnay ang panghihiram sa aktuwal na pagbasa at pag-unawa.","ok":true},{"t":"Magpatuloy sa pagbilang ng hiniram na aklat at ikumpara ito sa attendance upang makita kung pareho silang tumataas.","ok":false},{"t":"Magtanong sa piling kalahok kung anong aklat ang nagustuhan nila at gamitin ang kanilang sagot bilang dagdag na feedback.","ok":false},{"t":"Maghanda ng mas maraming popular na pamagat upang makita kung tataas pa ang bilang ng mga humihiram sa susunod na trial.","ok":false}]},{"q":"Isang kaklase ang mabilis matapos sa teksto ngunit mababa ang comprehension score. Ano ang pinakamakabuluhang payo?","choices":[{"t":"Panatilihin ang kasalukuyang bilis ngunit maglaan ng oras sa dulo upang balikan ang mga bahaging hindi malinaw.","ok":false},{"t":"Gumamit ng daliri o pananda habang nagbabasa upang masundan nang maayos ang bawat linya ng teksto.","ok":false},{"t":"Pumili muna ng mas maikling teksto at unti-unting dagdagan ang haba habang pinananatili ang tuloy-tuloy na pagbasa.","ok":false},{"t":"Subukang bawasan nang kaunti ang bilis at huminto sa mahahalagang bahagi upang masuri kung nauunawaan ang binabasa.","ok":true}]},{"q":"Sa feedback, karamihan ay nasiyahan sa programa ngunit ilang tahimik na mag-aaral ang hindi sumagot sa survey. Ano ang pinakamainam na paraan upang maging mas patas ang datos?","choices":[{"t":"Magdagdag ng maikling group discussion pagkatapos ng session upang makakuha pa ng komento mula sa mga nais magsalita.","ok":false},{"t":"Mag-interview ng ilang regular na kalahok at ihambing ang kanilang sagot sa naunang survey responses.","ok":false},{"t":"Magbigay ng anonymous na paraan ng pagsagot at hikayatin ang lahat ng uri ng kalahok na magbigay ng puna.","ok":true},{"t":"Maglagay ng suggestion box sa library upang magkaroon ng dagdag na paraan ng pagbibigay ng opinyon sa mga susunod na linggo.","ok":false}]},{"q":"May dalawang mungkahi: dagdagan ang reading time o dagdagan ang comprehension activities. Ipinapakita ng datos na sapat ang oras ngunit mababa ang pag-unawa. Ano ang pipiliin mo?","choices":[{"t":"Dagdagan ang comprehension activities dahil iyon ang mas direktang tumutugon sa suliraning ipinakita ng datos.","ok":true},{"t":"Dagdagan nang kaunti ang reading time at obserbahan kung kusang tataas ang pag-unawa sa susunod na session.","ok":false},{"t":"Pagsamahin agad ang dalawang pagbabago upang mas maraming bahagi ng programa ang mapahusay nang sabay-sabay.","ok":false},{"t":"Panatilihin muna ang kasalukuyang setup at kumuha pa ng attendance data bago magpasya kung alin ang babaguhin.","ok":false}]},{"q":"May mag-aaral na hindi nakahiram ng library book ngunit buong oras na nagbasa ng sarili niyang aklat. Paano siya dapat itala?","choices":[{"t":"Isama siya sa attendance at gumawa ng hiwalay na tala para sa mga kalahok na walang library borrowing record.","ok":false},{"t":"Itala ang oras ng kaniyang pagbabasa at idagdag ito sa observation notes upang may ebidensiya ng kaniyang participation.","ok":false},{"t":"Itala siyang aktibong kalahok sa reading activity at hiwalay na markahan na sariling aklat ang kaniyang ginamit.","ok":true},{"t":"Hilinging magbigay siya ng maikling reflection tungkol sa binasa upang magkaroon ng karagdagang record ng kaniyang gawain.","ok":false}]},{"q":"Sa isang session, tumaas ang attendance ngunit naging maingay ang silid at bumaba ang completion rate. Ano ang pinakamainam na pagbabago?","choices":[{"t":"Magtalaga ng student marshals sa bawat bahagi ng silid upang makatulong sa pagpapanatili ng tahimik na kapaligiran.","ok":false},{"t":"Hatiin ang mga kalahok sa mas maliliit na grupo at gumamit ng available na tahimik na espasyo upang mapanatili ang kalidad ng pagbasa.","ok":true},{"t":"Magbigay ng malinaw na paalala sa simula ng session at obserbahan kung bababa ang ingay sa susunod na trial.","ok":false},{"t":"Ayusin ang seating arrangement upang magkaroon ng mas malaking pagitan ang mga mag-aaral habang nagbabasa.","ok":false}]},{"q":"May dalawang magkasalungat na datos: mataas ang satisfaction rating ngunit halos walang pagbabago sa comprehension. Ano ang pinakatumpak na interpretasyon?","choices":[{"t":"Positibo ang pagtanggap sa programa, kaya maaari itong ipagpatuloy habang kumukuha pa ng mas maraming comprehension data.","ok":false},{"t":"May indikasyon ng tagumpay sa engagement, kaya dapat suriin kung kailangan lamang baguhin ang paraan ng comprehension assessment.","ok":false},{"t":"Mahalaga ang dalawang resulta, kaya kailangang ikumpara pa ang attendance, feedback, at scores bago gumawa ng pangmatagalang pasya.","ok":false},{"t":"Maganda ang karanasan ng mga kalahok, ngunit hindi pa sapat ang ebidensiya upang sabihing umunlad ang comprehension.","ok":true}]},{"q":"Napansin mong may mga mag-aaral na pinipili lamang ang pinakamaikling teksto upang mabilis matapos. Ano ang pinakamainam na tugon?","choices":[{"t":"Maghanda ng listahan ng inirerekomendang teksto at hayaang pumili ang mag-aaral ayon sa interes at oras na mayroon siya.","ok":false},{"t":"Magpatupad ng minimum reading time upang mahikayat silang manatili sa gawain kahit maikli ang napiling teksto.","ok":false},{"t":"Magdagdag ng reflection question sa bawat teksto upang magkaroon ng pare-parehong gawain pagkatapos magbasa.","ok":false},{"t":"Magbigay ng pagpipiliang teksto na magkakaiba ang paksa ngunit kontrolado ang antas at inaasahang reading task.","ok":true}]},{"q":"Bago palawakin ang programa sa ibang seksyon, ano ang pinakamahalagang ihanda upang maging maihahambing ang resulta?","choices":[{"t":"Isang common schedule at parehong bilang ng upuan upang maging halos pareho ang pisikal na setup ng bawat session.","ok":false},{"t":"Pare-parehong panuto, mastery criterion, paraan ng pagtatala, at malinaw na proseso ng assessment sa bawat seksyon.","ok":true},{"t":"Parehong listahan ng aklat at reading materials upang pare-pareho ang pagpipiliang makikita ng bawat seksyon.","ok":false},{"t":"Isang orientation para sa student leaders upang pareho ang paraan nila ng paggabay at pagbibigay ng paalala.","ok":false}]},{"q":"Isang mag-aaral ang naka-83% sa unang trial at 92% sa ikalawa. Ano ang pinakatumpak na paggamit sa dalawang resultang ito?","choices":[{"t":"Gamitin ang 92% bilang final mastery score ngunit panatilihin ang 83% bilang bahagi ng progress record.","ok":false},{"t":"Ihambing ang dalawang scores sa oras na ginugol upang makita kung may pagbabago sa bilis ng pagsagot at performance.","ok":false},{"t":"Panatilihin ang parehong trial records upang makita ang mastery at ang pagbabago ng performance sa bawat pagtatangka.","ok":true},{"t":"Isama ang dalawang scores sa learner profile at gamitin ang mas mataas na marka sa pagpapasya kung bubuksan ang susunod na module.","ok":false}]},{"q":"Matapos ang trial, tumaas ang participation at borrowing, gumanda ang feedback, ngunit maliit lamang ang pag-angat sa comprehension. Bilang evaluator, ano ang pinakamainam na rekomendasyon?","choices":[{"t":"Ipagpatuloy ang intervention na may tiyak na pagbabago sa comprehension activities at muling sukatin bago ito palawakin.","ok":true},{"t":"Ipagpatuloy ang kasalukuyang programa sa mas mahabang panahon upang makita kung lalakas pa ang comprehension trend.","ok":false},{"t":"Palawakin muna sa isang karagdagang seksyon habang kinokolekta ang parehong participation, borrowing, feedback, at comprehension data.","ok":false},{"t":"Panatilihin muna sa kasalukuyang grupo at magsagawa ng learner interviews upang matukoy kung aling bahagi ang dapat unahing baguhin.","ok":false}]}];
 
 let current1=0, score1=0, answered1=false, order1=[];
 let current2=0, score2=0, answered2=false, order2=[];
@@ -1005,7 +1005,7 @@ function formatTime(sec){
 }
 
 const storyText={
-  m1:'Isang hapon, napansin ni Mika ang isang lumang kahon sa sulok ng silid-aklatan. Hindi ito karaniwang kahon dahil may maliit itong kandado at tila matagal nang hindi nabubuksan. Dahil sa kaniyang pag-uusisa, agad niya itong ipinakita sa kaniyang guro. Maam, kanino po kaya ito? tanong ni Mika. Sinuri ng guro ang kahon at nakita ang isang maliit na papel na nakasingit sa ilalim nito. Nakasaad doon ang isang pahiwatig tungkol sa isang aklat na matagal nang nawawala sa silid-aklatan. Naging masigasig si Mika sa paghahanap. Isa-isa niyang tiningnan ang mga istante at inayos ang mga aklat na nakakalat sa paligid. Maya-maya, napansin niya ang isang aklat na nakatago sa likod ng isang malaking diksyunaryo. Dahan-dahan niya itong kinuha. Sa unang pahina, nakita niya ang pangalan ng dating tagapangasiwa ng silid-aklatan. Mayroon ding maikling mensahe na nagsasabing ang aklat ay dapat pangalagaan at ipasa sa mga susunod na mag-aaral. Napangiti si Mika. Hindi man kayamanan ang kaniyang natagpuan, nakadama siya ng kagalakan dahil may natuklasan siyang bahagi ng kasaysayan ng kanilang paaralan.'
+  m1:'Isang hapon, napansin ni Mika ang isang lumang kahon sa sulok ng silid-aklatan. Hindi ito karaniwang kahon dahil may maliit itong kandado at tila matagal nang hindi nabubuksan. Dahil sa kaniyang pag-uusisa, agad niya itong ipinakita sa kaniyang guro. Maam, kanino po kaya ito? tanong ni Mika. Sinuri ng guro ang kahon at nakita ang isang maliit na papel na nakasingit sa ilalim nito. Nakasaad doon ang isang pahiwatig tungkol sa isang aklat na matagal nang nawawala sa silid-aklatan. Naging masigasig si Mika sa paghahanap. Isa-isa niyang tiningnan ang mga istante at inayos ang mga aklat na nakakalat sa paligid. Maya-maya, napansin niya ang isang aklat na nakatago sa likod ng isang malaking diksiyonaryo. Dahan-dahan niya itong kinuha. Sa unang pahina, nakita niya ang pangalan ng dating tagapangasiwa ng silid-aklatan. Mayroon ding maikling mensahe na nagsasabing ang aklat ay dapat pangalagaan at ipasa sa mga susunod na mag-aaral. Napangiti si Mika. Hindi man kayamanan ang kaniyang natagpuan, nakadama siya ng kagalakan dahil may natuklasan siyang bahagi ng kasaysayan ng kanilang paaralan.'
 };
 
 function playStoryAudio(audioId,key){
